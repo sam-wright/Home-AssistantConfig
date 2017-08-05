@@ -1,0 +1,10 @@
+Temps:
+  # name: Climate
+  # view: true
+  # control: true
+  entities:
+  - sensor.bedroom_temperature
+  - sensor.living_room_temperature
+  - sensor.main_floor_temperature
+  - sensor.my_ecobee_temperature
+  - sensor.dark_sky_temperature

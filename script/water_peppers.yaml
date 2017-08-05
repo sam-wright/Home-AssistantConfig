@@ -1,0 +1,8 @@
+water_peppers:
+  sequence: 
+    - service: switch.turn_on
+      entity_id: "switch.Garden_Water"
+    - delay: "{{ duration }}"
+    - service: switch.turn_off
+      entity_id: "switch.Garden_Water"
+

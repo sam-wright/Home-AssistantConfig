@@ -1,0 +1,11 @@
+- alias: '7 AM, time to water the peps'
+  trigger:
+    platform: time
+    at: '07:00:00'
+
+  action:
+    - service: script.water_peppers
+      data_template:
+        duration: '00:01'
+
+  

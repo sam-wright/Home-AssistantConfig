@@ -1,0 +1,9 @@
+Occupancy:
+  # name: Occupancy
+  # view: true
+  # control: true
+  entities:
+  - binary_sensor.bedroom_occupancy
+  - binary_sensor.living_room_occupancy
+  - binary_sensor.main_floor_occupancy
+  - binary_sensor.my_ecobee_occupancy
