@@ -5,6 +5,6 @@ Temps:
   entities:
   - sensor.bedroom_temperature
   - sensor.living_room_temperature
-  - sensor.main_floor_temperature
+  - sensor.front_room_temperature
   - sensor.my_ecobee_temperature
   - sensor.dark_sky_temperature
