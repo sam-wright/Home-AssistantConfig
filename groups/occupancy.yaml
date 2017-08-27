@@ -3,7 +3,10 @@ Occupancy:
   # view: true
   # control: true
   entities:
+  - device_tracker.sam
+  - device_tracker.rachel
   - binary_sensor.bedroom_occupancy
   - binary_sensor.living_room_occupancy
   - binary_sensor.front_room_occupancy
   - binary_sensor.my_ecobee_occupancy
+

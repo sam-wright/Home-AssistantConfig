@@ -1,0 +1,11 @@
+- alias: 'Home Occupancy Tracker'
+  trigger:
+    platform: state 
+    entity_id: group.family
+    to: 'not_home'
+
+  action:
+    service: notify.pushbullet
+    data:
+      message: 'Home is Empty!'
+      title: 'Test Notification'

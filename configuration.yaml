@@ -66,14 +66,27 @@ logbook:
 # Track the sun
 sun:
 
-# Weather Prediction
+#zoneminder:
+#  host: 192.168.1.175
+
+# KODI Support
+media_player:
+  - platform: kodi
+    host: 192.168.1.155
+
+  - platform: cast
+
 sensor:
+# Weather Prediction
   - platform: darksky
     api_key: !secret darksky_key
     monitored_conditions:
      - summary
      - temperature
      - ozone
+  
+#  - platform: zoneminder
+
 #  - platform: yr
 #    name: "Local Climate"
 #    monitored_conditions:
@@ -91,6 +104,11 @@ sensor:
 #      - 'time_date'
 #      - 'time_utc'
 #      - 'beat'
+
+#switch:
+#  - platform: zoneminder
+#    command_on: Modect
+#    command_off: None
 
 # Text to speech
 tts:
@@ -110,7 +128,21 @@ climate:
 zwave:
   usb_path: /dev/zwave
 
+device_tracker:
+  - platform: netgear
+    host: 192.168.1.1
+    username: !secret netgear_user
+    password: !secret netgear_pass
+    interval_seconds: 30
+    consider_home: 180
+    track_new_devices: no
+
+notify:
+  - name: pushbullet
+    platform: pushbullet
+    api_key: o.MmHratC9lK2NIxclz5wMmWzqXBEiPeWW
+
 group: !include_dir_merge_named groups
 automation: !include_dir_merge_list automation
-script: !include_dir_merge_named script
+script: !include scripts.yaml
 #script: !include_dir_merge_list script

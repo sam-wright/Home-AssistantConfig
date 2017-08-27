@@ -2,8 +2,10 @@
   trigger:
     platform: time
     at: '11:00:00'
-  
+
   action:
     - service: script.water_peppers
       data_template:
-        duration: '00:01'
+        duration: '00:02'
+
+  
