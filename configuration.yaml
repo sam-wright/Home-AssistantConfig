@@ -66,8 +66,8 @@ logbook:
 # Track the sun
 sun:
 
-#zoneminder:
-#  host: 192.168.1.175
+zoneminder:
+  host: 192.168.1.175
 
 # KODI Support
 media_player:
@@ -85,7 +85,7 @@ sensor:
      - temperature
      - ozone
   
-#  - platform: zoneminder
+  - platform: zoneminder
 
 #  - platform: yr
 #    name: "Local Climate"
@@ -105,10 +105,10 @@ sensor:
 #      - 'time_utc'
 #      - 'beat'
 
-#switch:
-#  - platform: zoneminder
-#    command_on: Modect
-#    command_off: None
+switch:
+  - platform: zoneminder
+    command_on: Modect
+    command_off: None
 
 # Text to speech
 tts:
@@ -137,12 +137,27 @@ device_tracker:
     consider_home: 180
     track_new_devices: no
 
+python_script:
+
+#logger:
+#  default: info
+
+telegram_bot:
+  - platform: polling
+    api_key: !secret telegram_key 
+    allowed_chat_ids:
+      - !secret telegram_id
+
 notify:
-  - name: pushbullet
-    platform: pushbullet
-    api_key: o.MmHratC9lK2NIxclz5wMmWzqXBEiPeWW
+  - name: Telegram
+    platform: telegram
+    chat_id: !secret telegram_id 
+
+#notify:
+#  - name: pushbullet
+#    platform: pushbullet
+#    api_key: !secret pushbullet_key
 
 group: !include_dir_merge_named groups
 automation: !include_dir_merge_list automation
 script: !include scripts.yaml
-#script: !include_dir_merge_list script

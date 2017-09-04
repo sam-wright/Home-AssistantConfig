@@ -1,11 +1,32 @@
-- alias: 'Home Occupancy Tracker'
+- alias: 'Home Occupancy - Leaving'
   trigger:
     platform: state 
     entity_id: group.family
     to: 'not_home'
 
   action:
-    service: notify.pushbullet
-    data:
-      message: 'Home is Empty!'
-      title: 'Test Notification'
+    - service: notify.telegram
+      data:
+        message: 'Home is Empty! Setting Ecobee to _Away_'
+        title: 'HomeAssistant Notification'
+
+    - service: climate.set_away_mode
+      data:
+        away_mode: 'on'
+
+- alias: 'Home Occupancy - Arriving'
+  trigger:
+    platform: state 
+    entity_id: group.family
+    to: 'home'
+
+  action:
+    - service: notify.telegram
+      data:
+        message: 'Home is Occupied! Setting Ecobee to _Home_'
+        title: 'HomeAssistant Notification'
+
+    - service: climate.set_away_mode
+      data:
+        away_mode: 'off'
+

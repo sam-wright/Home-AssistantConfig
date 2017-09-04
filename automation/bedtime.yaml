@@ -1,0 +1,11 @@
+- alias: 'Bedtime'
+  trigger:
+    platform: time
+    at: '20:15:00'
+
+  action:
+    - service: homeassistant.turn_on
+      entity_id: switch.bedroom_lamp 
+   
+
+  
