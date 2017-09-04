@@ -87,6 +87,11 @@ sensor:
   
   - platform: zoneminder
 
+  - platform: waqi
+    token: !secret waqi_key
+    locations: 
+      - !secret waqi_location 
+
 #  - platform: yr
 #    name: "Local Climate"
 #    monitored_conditions:
