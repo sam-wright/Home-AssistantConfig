@@ -1,0 +1,10 @@
+- alias: 'AQI'
+  trigger:
+    - platform: state
+      entity_id: sensor.waqi_salt_lake_utah
+
+  action:
+    - service: python_script.aqi
+   
+
+  
