@@ -1,5 +1,6 @@
+logger.debug("Running python AirQuality script!")
+
 aqi_state = hass.states.get('sensor.waqi_salt_lake_city_utah').state
-logger.warning(aqi_state)
 aqi_state = int(aqi_state)
 
 if aqi_state < 50:

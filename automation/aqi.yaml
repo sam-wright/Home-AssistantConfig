@@ -1,7 +1,9 @@
 - alias: 'AQI'
   trigger:
     - platform: state
-      entity_id: sensor.waqi_salt_lake_utah
+      entity_id: sensor.waqi_salt_lake_city_utah
+    - platform: homeassistant
+      event: start
 
   action:
     - service: python_script.aqi

@@ -83,7 +83,6 @@ sensor:
     monitored_conditions:
      - summary
      - temperature
-     - ozone
   
   - platform: zoneminder
 
