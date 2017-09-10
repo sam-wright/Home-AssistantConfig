@@ -6,7 +6,7 @@
   condition:
     - condition: state
       entity_id: sensor.theo_cam_status
-      state: "Modetect"
+      state: "Modect"
     - condition: numeric_state
       entity_id: sensor.theo_cam_events
       above: 0
