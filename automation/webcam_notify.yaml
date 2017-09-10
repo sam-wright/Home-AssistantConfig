@@ -1,0 +1,20 @@
+- alias: 'Webcam Notifier'
+  trigger:
+    - platform: state
+      entity_id: sensor.theo_cam_events
+
+  condition:
+    - condition: state
+      entity_id: sensor.theo_cam_status
+      state: "Modetect"
+    - condition: numeric_state
+      entity_id: sensor.theo_cam_events
+      above: 0
+
+  action:
+    service: notify.telegram
+    data: 
+      message: "Zoneminder: Motion Detected!"
+   
+
+  
