@@ -15,6 +15,6 @@
     service: notify.telegram
     data: 
       message: "Zoneminder: Motion Detected!"
-   
+      title: "HomeAssistant Notification"
 
   

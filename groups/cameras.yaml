@@ -1,0 +1,9 @@
+Cameras:
+  # name: Cameras
+  # view: true
+  # control: true
+  entities:
+  - switch.theo_cam_state
+  - sensor.theo_cam_status
+  - sensor.theo_cam_events
+
