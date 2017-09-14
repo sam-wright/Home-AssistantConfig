@@ -17,6 +17,13 @@ homeassistant:
 # Enables the frontend
 frontend:
 
+panel_custom:
+  - name: floorplan
+    sidebar_title: Alarm Panel
+    sidebar_icon: mdi:security-home
+    url_path: floorplan
+    config: !include floorplan.yaml
+
 # Enables configuration UI
 config:
 
@@ -83,13 +90,13 @@ sensor:
     monitored_conditions:
      - summary
      - temperature
-  
+
   - platform: zoneminder
 
   - platform: waqi
     token: !secret waqi_key
-    locations: 
-      - !secret waqi_location 
+    locations:
+      - !secret waqi_location
 
 #  - platform: yr
 #    name: "Local Climate"
@@ -148,14 +155,14 @@ python_script:
 
 telegram_bot:
   - platform: polling
-    api_key: !secret telegram_key 
+    api_key: !secret telegram_key
     allowed_chat_ids:
       - !secret telegram_id
 
 notify:
   - name: Telegram
     platform: telegram
-    chat_id: !secret telegram_id 
+    chat_id: !secret telegram_id
 
 #notify:
 #  - name: pushbullet
