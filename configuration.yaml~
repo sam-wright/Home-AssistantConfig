@@ -10,7 +10,9 @@ homeassistant:
   unit_system: imperial
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Denver
-  packages: !include_dir_named packages
+
+# Show links to resources in log and frontend
+#introduction:
 
 # Enables the frontend
 frontend:
@@ -67,9 +69,7 @@ history:
 
 # View all events in a logbook
 logbook:
-#  exclude:
-#    entities:
-#      -
+
 # Track the sun
 sun:
 
@@ -83,6 +83,43 @@ media_player:
 
   - platform: cast
 
+sensor:
+# Weather Prediction
+  - platform: darksky
+    api_key: !secret darksky_key
+    monitored_conditions:
+     - summary
+     - temperature
+
+  - platform: zoneminder
+
+  - platform: waqi
+    token: !secret waqi_key
+    locations:
+      - !secret waqi_location
+
+#  - platform: yr
+#    name: "Local Climate"
+#    monitored_conditions:
+#      - temperature
+#      - symbol
+#      - precipitation
+#  - platform: random
+#    name: "random"
+#  - platform: time_date
+#    name: "timer"
+#    display_options:
+#      - 'time'
+#      - 'date'
+#      - 'date_time'
+#      - 'time_date'
+#      - 'time_utc'
+#      - 'beat'
+
+switch:
+  - platform: zoneminder
+    command_on: Modect
+    command_off: None
 
 # Text to speech
 tts:
@@ -101,6 +138,15 @@ climate:
 # Z-Wave hub
 zwave:
   usb_path: /dev/zwave
+
+device_tracker:
+  - platform: netgear
+    host: 192.168.1.1
+    username: !secret netgear_user
+    password: !secret netgear_pass
+    interval_seconds: 30
+    consider_home: 180
+    track_new_devices: no
 
 python_script:
 
@@ -126,8 +172,3 @@ notify:
 group: !include_dir_merge_named groups
 automation: !include_dir_merge_list automation
 script: !include scripts.yaml
-device_tracker: !include_dir_merge_list device_trackers
-sensor: !include_dir_merge_list sensors
-scene: !include_dir_merge_list scenes
-input_boolean: !include_dir_merge_named input_booleans
-switch: !include_dir_merge_list switches
