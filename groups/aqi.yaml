@@ -2,3 +2,6 @@ Air Quality:
   entities:
   - sensor.waqi_salt_lake_city_utah
   - sensor.aqi
+  - sensor.us_air_pollution_level
+  - sensor.us_air_quality_index
+  - sensor.us_main_pollutant

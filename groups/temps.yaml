@@ -8,3 +8,4 @@ Temps:
   - sensor.front_room_temperature
   - sensor.my_ecobee_temperature
   - sensor.dark_sky_temperature
+  - sensor.my_ecobee_humidity

@@ -11,13 +11,14 @@ homeassistant:
   # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Denver
   packages: !include_dir_named packages
+  customize: !include customize.yaml
 
 # Enables the frontend
 frontend:
 
 panel_custom:
   - name: floorplan
-    sidebar_title: Alarm Panel
+    sidebar_title: Floorplan View
     sidebar_icon: mdi:security-home
     url_path: floorplan
     config: !include floorplan.yaml
@@ -64,6 +65,8 @@ conversation:
 
 # Enables support for tracking state changes over time.
 history:
+
+mqtt:
 
 # View all events in a logbook
 logbook:
@@ -131,3 +134,4 @@ sensor: !include_dir_merge_list sensors
 scene: !include_dir_merge_list scenes
 input_boolean: !include_dir_merge_named input_booleans
 switch: !include_dir_merge_list switches
+

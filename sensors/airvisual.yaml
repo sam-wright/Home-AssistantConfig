@@ -1,0 +1,4 @@
+- platform: airvisual
+  api_key: fQMT2m9rr57cnHD7y
+  monitored_conditions:
+    - us

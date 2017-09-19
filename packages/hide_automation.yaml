@@ -1,0 +1,28 @@
+#-------------------------------------------
+# Tidy up the interface 
+#-------------------------------------------
+homeassistant:
+  customize_glob:
+    "input_boolean.hide_automation*":
+      icon: mdi:bug
+      hidden: False
+
+#-------------------------------------------
+input_boolean:
+  hide_automaion:
+    name: Hide Automation
+    initial: off
+
+###################################
+##  Dynamically set visibility of Automations tab
+###################################
+automation:
+  - alias: Hide Automations Tab
+    trigger:
+      platform: state
+      entity_id:
+        - input_boolean.hide_automation
+    action:
+      service: groups.all_automations
+      data_template:
+        homeassistant.components: "{{ states.input_boolean.hide_automation.state }}"
