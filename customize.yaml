@@ -1,2 +1,20 @@
 sensor.dark_sky_minutely_summary:
   friendly_name: 'Dark Sky Minutely '
+switch.zone_5:
+  hidden: true
+switch.zone_6:
+  hidden: true
+switch.zone_7:
+  hidden: true
+switch.zone_8:
+  hidden: true
+switch.front_yard_1:
+  icon: mdi:water
+switch.front_yard_2:
+  icon: mdi:water
+switch.back_yard_2:
+  icon: mdi:water
+switch.back_yard_1:
+  icon: mdi:water
+switch.garden_water:
+  icon: mdi:water

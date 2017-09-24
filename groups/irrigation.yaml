@@ -1,0 +1,11 @@
+irrigation:
+  name: Irrigation
+  icon: mdi:water-pump
+  entities:
+  - switch.garden_water
+  - switch.front_yard_1
+  - switch.front_yard_2
+  - switch.back_yard_1
+  - switch.back_yard_2
+  - input_text.manual_irrigation_time
+
