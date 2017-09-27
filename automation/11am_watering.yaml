@@ -6,6 +6,6 @@
   action:
     - service: script.water_peppers
       data_template:
-        duration: '00:02'
+        duration: '00:01'
 
   

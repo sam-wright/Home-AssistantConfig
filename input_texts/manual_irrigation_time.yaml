@@ -1,6 +1,0 @@
-manual_irrigation_time:
-  name: irrigation_time
-  initial: 10
-  min: 1
-  max: 60
-  pattern: '[0-9]*'
