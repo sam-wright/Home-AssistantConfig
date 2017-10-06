@@ -1,6 +1,7 @@
 irrigation:
   name: Irrigation
   icon: mdi:water-pump
+  control: hidden
   entities:
   - switch.garden_water
   - switch.front_yard_1

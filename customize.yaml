@@ -18,3 +18,5 @@ switch.back_yard_1:
   icon: mdi:water
 switch.garden_water:
   icon: mdi:water
+group.all_automations:
+  hidden: false 
