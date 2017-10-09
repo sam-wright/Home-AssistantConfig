@@ -7,6 +7,11 @@ To Be Elaborated Later...
   * [Telegram](https://telegram.org)
   * [Pushbullet](https://pushbullet.com)
   * [Travis CI](https://travis-ci.com)
+  * [World Air Quality Index](https://waqi.info)
+  * [AirVisual](https://airvisual.com)
+  * [Dark Sky](https://darksky.net)
+  * [Pi-hole](https://hi-hole.net)
+  * [ZoneMinder](https://zoneminder.com)
 * [Floorplan](https://github.com/pkozul/ha-floorplan) Great project, but still quite a work in progress integrating into my HA. 
 
 
