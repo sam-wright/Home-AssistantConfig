@@ -1,17 +1,17 @@
-# [![Travis Status](https://travis-ci.org/sam-wright/Home-AssistantConfig.svg?branch=master)](https://travis-ci.org/sam-wright/Home-AssistantConfig.svg?branch=master) HomeAssistant Configuration. (inspired by [CCOSTAN](https://github.com/CCOSTAN))
+# [![Travis Status](https://travis-ci.org/sam-wright/Home-AssistantConfig.svg?branch=master)](https://travis-ci.org/sam-wright/Home-AssistantConfig.svg?branch=master) HomeAssistant Configuration. (inspired by [ccostan](https://github.com/CCOSTAN))
 
 To Be Elaborated Later...
 
 ** Software ** 
-* [Home Assistant](https://home-assistant.io)(of course).
-  * [Telegram](https://telegram.org)
-  * [Pushbullet](https://pushbullet.com)
-  * [Travis CI](https://travis-ci.com)
-  * [World Air Quality Index](https://waqi.info)
-  * [AirVisual](https://airvisual.com)
-  * [Dark Sky](https://darksky.net)
-  * [Pi-hole](https://hi-hole.net)
-  * [ZoneMinder](https://zoneminder.com)
+* [Home Assistant](https://home-assistant.io) Of course.
+  * [Telegram](https://telegram.org) Notifications (primary)
+  * [Pushbullet](https://pushbullet.com) Notifications (backup)
+  * [Travis CI](https://travis-ci.com)  githubs CI tool
+  * [World Air Quality Index](https://waqi.info) Air quality reporting
+  * [AirVisual](https://airvisual.com) Air quality reporting
+  * [Dark Sky](https://darksky.net) Hyper-local weather information
+  * [Pi-hole](https://pi-hole.net) Strip the adds from our network
+  * [ZoneMinder](https://zoneminder.com) Motion detection and monitoring for ip cameras
 * [Floorplan](https://github.com/pkozul/ha-floorplan) Great project, but still quite a work in progress integrating into my HA. 
 
 
