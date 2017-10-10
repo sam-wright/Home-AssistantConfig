@@ -1,0 +1,7 @@
+garden:
+  name: Garden
+  icon: mdi:water-pump
+  control: hidden
+  entities:
+  - switch.garden_water
+

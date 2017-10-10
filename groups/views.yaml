@@ -1,0 +1,33 @@
+Outside:
+  view: yes
+  icon: mdi:tree
+  entities:
+    - group.irrigation
+    - group.garden
+    - group.air_quality
+    - script.water_peppers
+    - group.weather
+
+Inside:
+  view: yes
+  icon: mdi:home-variant
+  entities:
+    - group.occupancy
+    - group.cameras
+    - group.temps
+    - switch.bedroom_lamp
+    - climate.my_ecobee
+    - group.network
+    - input_boolean.guest_mode
+    - input_boolean.speech_notifications
+
+Security:
+  view: yes
+  icon: mdi:security
+  entities:
+    - group.occupancy
+    - group.cameras
+    - input_bolean.alert_mode
+
+
+
