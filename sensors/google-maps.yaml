@@ -1,0 +1,11 @@
+- platform: google_travel_time
+  api_key: !secret maps_api
+  origin: !secret maps_home 
+  destination: !secret maps_work 
+  name: "Home To Work"
+
+- platform: google_travel_time
+  api_key: !secret maps_api
+  origin:  !secret maps_home
+  destination: !secret maps_work
+  name: "Work To Home"

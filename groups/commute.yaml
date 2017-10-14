@@ -1,0 +1,4 @@
+Commute:
+  entities:
+    - sensor.home_to_work
+    - sensor.work_to_home

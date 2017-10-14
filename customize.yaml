@@ -18,7 +18,11 @@ switch.back_yard_1:
   icon: mdi:water
 switch.garden_water:
   icon: mdi:water
-group.all_automations: 
+group.all_automations:
   hidden: false
-group.all_scripts: 
+group.all_scripts:
   hidden: false
+sensor.work_to_home:
+  icon: mdi:car
+sensor.home_to_work:
+  icon: mdi:car
