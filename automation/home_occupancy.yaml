@@ -5,14 +5,16 @@
     to: 'not_home'
 
   action:
+
+    - service: climate.set_away_mode
+      data:
+        away_mode: 'on'
+    
     - service: notify.telegram
       data:
         message: 'Home is Empty! Setting Ecobee to _Away_'
         title: 'HomeAssistant Notification'
 
-    - service: climate.set_away_mode
-      data:
-        away_mode: 'on'
 
 - alias: 'Home Occupancy - Arriving'
   trigger:
@@ -21,12 +23,19 @@
     to: 'home'
 
   action:
-    - service: notify.telegram
-      data:
-        message: 'Home is Occupied! Setting Ecobee to _Home_'
-        title: 'HomeAssistant Notification'
 
     - service: climate.set_away_mode
       data:
         away_mode: 'off'
 
+    - service: notify.telegram
+      data:
+        title: 'HomeAssistant Notification'
+        #message: 'Home is Occupied! Setting Ecobee to _Home_'
+        message: >
+            {% if is_state('device_tracker.sam', 'home') %}
+              *Sam* has returned, Setting Ecobee to _Home_
+            {% endif %}
+            {% if is_state('device_tracker.rachel', 'home') %}
+              *Rachel* has returned, Setting Ecobee to _Home_
+            {% endif %}
