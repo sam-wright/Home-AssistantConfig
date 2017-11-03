@@ -1,0 +1,4 @@
+- platform: trend
+  sensors:
+    theo_cam_events_trend:
+      entity_id: sensor.theo_cam_events

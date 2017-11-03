@@ -1,15 +1,8 @@
 - alias: 'Webcam Notifier'
   trigger:
     - platform: state
-      entity_id: sensor.theo_cam_events
-
-  condition:
-    - condition: state
-      entity_id: sensor.theo_cam_status
-      state: "Modect"
-    - condition: numeric_state
-      entity_id: sensor.theo_cam_events
-      above: 0
+      entity_id: binary_sensor.theo_cam_events_trend 
+      to: 'on'
 
   action:
     service: notify.telegram

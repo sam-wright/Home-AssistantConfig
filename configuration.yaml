@@ -85,7 +85,7 @@ logbook:
 sun:
 
 zoneminder:
-  host: 192.168.1.175
+  host: 192.168.1.155
 
 # KODI Support
 media_player:
@@ -143,5 +143,6 @@ device_tracker: !include_dir_merge_list device_trackers
 sensor: !include_dir_merge_list sensors
 scene: !include_dir_merge_list scenes
 switch: !include_dir_merge_list switches
+binary_sensor: !include_dir_merge_list binary_sensors
 
 

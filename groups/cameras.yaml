@@ -6,4 +6,4 @@ Cameras:
   - switch.theo_cam_state
   - sensor.theo_cam_status
   - sensor.theo_cam_events
-
+  - binary_sensor.theo_cam_events_trend
