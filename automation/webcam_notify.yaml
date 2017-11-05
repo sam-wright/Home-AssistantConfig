@@ -16,4 +16,22 @@
       message: "Zoneminder: Motion Detected!"
       title: "HomeAssistant Notification"
 
+- alias: 'Webcam Monitoring On'
+
+  trigger: 
+  - platform: time
+    at: '00:00'
   
+  action:
+    - service: homeassistant.turn_on
+      entity_id: switch.theo_cam_state 
+  
+- alias: 'Webcam Monitoring Off'
+
+  trigger: 
+  - platform: time
+    at: '07:00'
+
+  action:
+    - service: homeassistant.turn_off
+      entity_id: switch.theo_cam_state
