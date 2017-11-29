@@ -2,19 +2,23 @@
 
   trigger:
     - platform: state
-      entity_id: binary_sensor.theo_cam_events_trend 
-      to: 'on'
+      entity_id: sensor.theo_cam_events 
   
-  condition:
-  - condition: state
-    entity_id: sensor.theo_cam_status
-    state: "Modect"
+  condition: 
+    condition: or
+    conditions:
+      - condition: state
+        entity_id: binary_sensor.theo_cam_events_trend 
+        state: 'on'
+      - condition: state
+        entity_id: sensor.theo_cam_status
+        state: 'Modect'
 
   action:
     service: notify.telegram
     data: 
-      message: "Zoneminder: Motion Detected!"
-      title: "HomeAssistant Notification"
+      message: 'Zoneminder: Motion Detected!'
+      title: 'HomeAssistant Notification'
 
 - alias: 'Webcam Monitoring On'
 
