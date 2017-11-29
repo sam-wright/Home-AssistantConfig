@@ -3,6 +3,6 @@
   username: !secret netgear_user
   password: !secret netgear_pass
   interval_seconds: 30
-  consider_home: 180
+  consider_home: 300
   track_new_devices: no
 
