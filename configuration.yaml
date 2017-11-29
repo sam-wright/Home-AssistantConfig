@@ -1,14 +1,9 @@
 homeassistant:
-  # Name of the location where Home Assistant is running
   name: Home
-  # Location required to calculate the time the sun rises and sets
   latitude: !secret homeassistant_lat
   longitude: !secret homeassistant_long
-  # Impacts weather/sunrise data (altitude above sea level in meters)
   elevation: !secret homeassistant_elev
-  # metric for Metric, imperial for Imperial
   unit_system: imperial
-  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
   time_zone: America/Denver
   packages: !include_dir_named packages
   customize: !include customize.yaml
@@ -27,7 +22,6 @@ panel_custom:
 config:
 
 http:
-  # Uncomment this to add a password (recommended!)
   api_password: !secret homeassistant_pass
   # Uncomment this if you are using SSL or running in Docker etc
   #base_url: sam-wright.duckdns.org:8123
@@ -41,10 +35,6 @@ http:
     - 192.168.0.0/24
 
 # Checks for available updates
-# Note: This component will send some information about your system to
-# the developers to assist with development of Home Assistant.
-# For more information, please see:
-# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
 updater:
   # Optional, allows Home Assistant developers to focus on popular components.
   include_used_components: true
@@ -89,9 +79,9 @@ zoneminder:
 
 # KODI Support
 media_player:
-  - platform: kodi
-    host: 192.168.1.155
-
+#   - platform: kodi
+#     host: 192.168.1.155
+# 
   - platform: cast
 
 
@@ -115,9 +105,6 @@ zwave:
 
 python_script:
 
-#logger:
-#  default: info
-
 telegram_bot:
   - platform: polling
     api_key: !secret telegram_key
@@ -135,7 +122,7 @@ notify:
 #    api_key: !secret pushbullet_key
 
 input_boolean: !include_dir_merge_named input_booleans
-#input_text: !include_dir_merge_named input_texts
+# input_text: !include_dir_merge_named input_texts
 group: !include_dir_merge_named groups
 automation: !include_dir_merge_list automation
 script: !include scripts.yaml
