@@ -75,14 +75,12 @@ logbook:
 sun:
 
 zoneminder:
-  host: 192.168.1.155
+  host: zoneminder.local
 
 # KODI Support
 media_player:
-#   - platform: kodi
-#     host: 192.168.1.155
-# 
   - platform: cast
+#   - platform: kodi
 
 
 # Text to speech
