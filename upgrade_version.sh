@@ -8,7 +8,8 @@
 
 
 # Upgrade
-sudo -H -u homeassistant /bin/bash -c 'source /srv/homeassistant/bin/activate && pip3 install --upgrade homeassistant';
+#sudo -H -u homeassistant /bin/bash -c 'source /srv/homeassistant/bin/activate && pip3 install --upgrade homeassistant';
+sudo pip3 install --upgrade homeassistant;
 
 # Restart service
 sudo systemctl restart home-assistant@homeassistant.service 

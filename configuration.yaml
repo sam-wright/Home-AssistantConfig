@@ -64,7 +64,7 @@ conversation:
 # Enables support for tracking state changes over time.
 history:
 
-mqtt:
+#mqtt:
 
 # View all events in a logbook
 logbook:
@@ -75,7 +75,7 @@ logbook:
 sun:
 
 zoneminder:
-  host: zoneminder.local
+  host: !secret zoneminder_address 
 
 # KODI Support
 media_player:
@@ -98,8 +98,8 @@ climate:
   - platform: ecobee
 
 # Z-Wave hub
-zwave:
-  usb_path: /dev/zwave
+#zwave:
+#  usb_path: /dev/zwave
 
 python_script:
 
