@@ -4,6 +4,7 @@ Temps:
   # control: true
   entities:
   - sensor.bedroom_temperature
+  - sensor.theo_room_temperature
   - sensor.living_room_temperature
   - sensor.front_room_temperature
   - sensor.my_ecobee_temperature

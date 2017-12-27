@@ -98,8 +98,8 @@ climate:
   - platform: ecobee
 
 # Z-Wave hub
-#zwave:
-#  usb_path: /dev/zwave
+zwave:
+  usb_path: /dev/zwave
 
 python_script:
 
