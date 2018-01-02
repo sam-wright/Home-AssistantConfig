@@ -51,7 +51,7 @@ discovery:
     - openhome
     - panasonic_viera
     - philips_hue
-    - plex_mediaserver
+    #- plex_mediaserver
     - roku
     - samsung_tv
     - sonos
