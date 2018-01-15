@@ -51,7 +51,6 @@ discovery:
     - openhome
     - panasonic_viera
     - philips_hue
-    #- plex_mediaserver
     - roku
     - samsung_tv
     - sonos
@@ -120,7 +119,7 @@ notify:
 #    api_key: !secret pushbullet_key
 
 input_boolean: !include_dir_merge_named input_booleans
-# input_text: !include_dir_merge_named input_texts
+input_select: !include_dir_merge_named input_select
 group: !include_dir_merge_named groups
 automation: !include_dir_merge_list automation
 script: !include scripts.yaml

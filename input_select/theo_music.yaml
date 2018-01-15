@@ -1,0 +1,10 @@
+theo_music:
+  name: Theo Music
+  options:
+    - Rain
+    - Ocean
+    - Woodlands
+    - Fireplace
+    - None
+  initial: None
+  icon: mdi:weather-rainy

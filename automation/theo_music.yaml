@@ -1,0 +1,91 @@
+- alias: Stop Lullaby
+
+  trigger:
+    platform: state
+    entity_id: input_select.theo_music
+    to: "None"
+
+  action:
+    service: media_player.media_stop
+    data:
+      entity_id: media_player.theos_bedroom_music
+
+
+- alias: Play Ocean Lullaby
+
+  trigger:
+    platform: state
+    entity_id: input_select.theo_music
+    to: "Ocean"
+
+  action:
+    - service: media_player.volume_set
+      data:
+        entity_id: media_player.theos_bedroom_music
+        volume_level: 0.4
+
+    - service: media_player.play_media
+      data:
+        entity_id: media_player.theos_bedroom_music
+        media_content_id: http://192.168.1.150:8123/local/Ocean.mp3
+        media_content_type: audio/mp3
+
+
+- alias: Play Woodlands Lullaby
+
+  trigger:
+    platform: state
+    entity_id: input_select.theo_music
+    to: "Woodlands"
+
+  action:
+    - service: media_player.volume_set
+      data:
+        entity_id: media_player.theos_bedroom_music
+        volume_level: 0.6
+
+    - service: media_player.play_media
+      data:
+        entity_id: media_player.theos_bedroom_music
+        media_content_id: http://192.168.1.150:8123/local/Woodlands.mp3
+        media_content_type: audio/mp3
+
+
+- alias: Play Fireplace Lullaby
+
+  trigger:
+    platform: state
+    entity_id: input_select.theo_music
+    to: "Fireplace"
+
+  action:
+    - service: media_player.volume_set
+      data:
+        entity_id: media_player.theos_bedroom_music
+        volume_level: 0.6
+
+    - service: media_player.play_media
+      data:
+        entity_id: media_player.theos_bedroom_music
+        media_content_id: http://192.168.1.150:8123/local/Fireplace.mp3
+        media_content_type: audio/mp3
+
+
+- alias: Play Rain Lullaby
+
+  trigger:
+    platform: state
+    entity_id: input_select.theo_music
+    to: "Rain"
+
+  action:
+    - service: media_player.volume_set
+      data:
+        entity_id: media_player.theos_bedroom_music
+        volume_level: 0.6
+
+    - service: media_player.play_media
+      data:
+        entity_id: media_player.theos_bedroom_music
+        media_content_id: http://192.168.1.150:8123/local/Rain.mp3
+        media_content_type: audio/mp3
