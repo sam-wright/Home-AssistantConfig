@@ -35,9 +35,7 @@ automation:
       platform: state
       entity_id:
         - input_select.log_level
-#        - input_select.log_component
     action:
       service: logger.set_level
       data_template:
-#        {{ states.input_select.log_component.state }}: "{{ states.input_select.log_level.state }}"
         homeassistant.components: "{{ states.input_select.log_level.state }}"
