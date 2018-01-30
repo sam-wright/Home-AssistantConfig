@@ -24,15 +24,15 @@ config:
 http:
   api_password: !secret homeassistant_pass
   # Uncomment this if you are using SSL or running in Docker etc
-  #base_url: sam-wright.duckdns.org:8123
-  #ssl_certificate: !secret ssl_cert
-  #ssl_key: !secret ssl_key
-  #ip_ban_enabled: true
-  #login_attempts_threshold: 2
-  trusted_networks:
-    - ::1
-    - 127.0.0.1
-    - 192.168.0.0/24
+  base_url: sam-wright.duckdns.org
+  ssl_certificate: /etc/letsencrypt/live/sam-wright.duckdns.org/fullchain.pem
+  ssl_key: /etc/letsencrypt/live/sam-wright.duckdns.org/privkey.pem
+  ip_ban_enabled: true
+  login_attempts_threshold: 3 
+  #trusted_networks:
+  #  - ::1
+  #  - 127.0.0.1
+  #  - 192.168.0.0/24
 
 # Checks for available updates
 updater:
@@ -63,7 +63,7 @@ conversation:
 # Enables support for tracking state changes over time.
 history:
 
-#mqtt:
+mqtt:
 
 # View all events in a logbook
 logbook:
@@ -117,6 +117,16 @@ notify:
 #  - name: pushbullet
 #    platform: pushbullet
 #    api_key: !secret pushbullet_key
+
+light:
+  - platform: mqtt
+    name: "Kitchen Accent Lights"
+    command_topic: "kitchen/accent/light/switch"
+    state_topic: "kitchen/accent/light/status"
+    brightness_state_topic: "kitchen/accent/brightness/status"
+    brightness_command_topic: "kitchen/accent/brightness/set"
+    optimistic: false
+    retain: true
 
 input_boolean: !include_dir_merge_named input_booleans
 input_select: !include_dir_merge_named input_select

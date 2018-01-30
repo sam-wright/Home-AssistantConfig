@@ -1,5 +1,6 @@
 Network:
   entities:
+    - sensor.ssl_cert_expiry
     - sensor.speedtest_download
     - sensor.speedtest_upload
     - sensor.pihole_ads_blocked_today
