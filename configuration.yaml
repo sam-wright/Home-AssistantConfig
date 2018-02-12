@@ -29,10 +29,6 @@ http:
   ssl_key: /etc/letsencrypt/live/sam-wright.duckdns.org/privkey.pem
   ip_ban_enabled: true
   login_attempts_threshold: 3 
-  #trusted_networks:
-  #  - ::1
-  #  - 127.0.0.1
-  #  - 192.168.0.0/24
 
 # Checks for available updates
 updater:
