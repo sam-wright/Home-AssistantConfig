@@ -114,16 +114,8 @@ notify:
 #    platform: pushbullet
 #    api_key: !secret pushbullet_key
 
-light:
-  - platform: mqtt
-    name: "Kitchen Accent Lights"
-    command_topic: "kitchen/accent/light/switch"
-    state_topic: "kitchen/accent/light/status"
-    brightness_state_topic: "kitchen/accent/brightness/status"
-    brightness_command_topic: "kitchen/accent/brightness/set"
-    optimistic: false
-    retain: true
 
+light: !include_dir_merge_list lights
 input_boolean: !include_dir_merge_named input_booleans
 input_select: !include_dir_merge_named input_select
 group: !include_dir_merge_named groups

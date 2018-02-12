@@ -1,0 +1,6 @@
+- platform: mqtt
+  name: "Kitchen Accent Lights"
+  command_topic: "cmnd/sonoff/power"
+  state_topic: "stat/sonoff/POWER"
+  optimistic: false
+  retain: true
