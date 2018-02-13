@@ -114,6 +114,31 @@ notify:
 #    platform: pushbullet
 #    api_key: !secret pushbullet_key
 
+scene:
+  - name: Morning
+    entities:
+      light.kitchen_accent_lights: on
+  
+  - name: Day
+    entities:
+      light.kitchen_accent_lights: on
+
+  - name: Sundown
+    entities:
+      light.kitchen_accent_lights: on
+
+  - name: Evening
+    entities:
+      light.kitchen_accent_lights: on
+  
+  - name: Sleep
+    entities:
+      light.kitchen_accent_lights: on
+
+
+ifttt:
+  key: !secret ifttt_key
+
 
 light: !include_dir_merge_list lights
 input_boolean: !include_dir_merge_named input_booleans
@@ -123,7 +148,7 @@ automation: !include_dir_merge_list automation
 script: !include scripts.yaml
 device_tracker: !include_dir_merge_list device_trackers
 sensor: !include_dir_merge_list sensors
-scene: !include_dir_merge_list scenes
+#scene: !include_dir_merge_list scenes
 switch: !include_dir_merge_list switches
 binary_sensor: !include_dir_merge_list binary_sensors
 
