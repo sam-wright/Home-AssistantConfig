@@ -95,6 +95,7 @@ climate:
 # Z-Wave hub
 zwave:
   usb_path: /dev/zwave
+  network_key: !secret zwave_key
 
 python_script:
 
