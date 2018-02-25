@@ -2,13 +2,15 @@
   trigger:
     platform: sun
     event: sunset
-    offset: '00:00:00'
+    offset: '-00:30:00'
  
   action:
 #    - service: homeassistant.turn_on
 #      entity_id: switch.tree_lights 
     - service: homeassistant.turn_on
       entity_id: light.kitchen_accent_lights
+    - service: homeassistant.turn_on
+      entity_id: swich.porch_light_switch
    
 
   
