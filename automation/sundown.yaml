@@ -10,7 +10,7 @@
     - service: homeassistant.turn_on
       entity_id: light.kitchen_accent_lights
     - service: homeassistant.turn_on
-      entity_id: swich.porch_light_switch
+      entity_id: switch.porch_light_switch
    
 
   
