@@ -26,3 +26,35 @@ sensor.work_to_home:
   icon: mdi:car
 sensor.home_to_work:
   icon: mdi:car
+sensor.aeotec_dsb45_water_sensor_flood_4:
+  hidden: true
+sensor.aeotec_dsb45_water_sensor_sourcenodeid_4:
+  hidden: true
+sensor.alarm_type_4:
+  hidden: true
+sensor.aeotec_dsb45_water_sensor_sourcenodeid:
+  hidden: true
+sensor.aeotec_dsb45_water_sensor_flood:
+  hidden: true
+sensor.alarm_type:
+  hidden: true
+sensor.alarm_level:
+  hidden: true
+sensor.aeotec_dsb45_water_sensor_sourcenodeid_3:
+  hidden: true
+sensor.aeotec_dsb45_water_sensor_flood_3:
+  hidden: true
+sensor.alarm_type_3:
+  hidden: true
+sensor.alarm_level_3:
+  hidden: true
+sensor.aeotec_dsb45_water_sensor_sourcenodeid_2:
+  hidden: true
+sensor.aeotec_dsb45_water_sensor_flood_2:
+  hidden: true
+sensor.alarm_type_2:
+  hidden: true
+sensor.alarm_level_2:
+  hidden: true
+sensor.alarm_level_4:
+  hidden: true
