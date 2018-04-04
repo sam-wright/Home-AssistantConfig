@@ -1,0 +1,24 @@
+- alias: 'Leak Detection'
+  trigger:
+    platform: state 
+    entity_id: group.water_sensors
+    to: 'on'
+
+  action:
+    - service: notify.telegram
+      data:
+        title: '!!Leak Detection!!'
+        message: >
+            {% if is_state('binary_sensor.upstairs_bathroom_water_sensor', 'on') %}
+              *Upstairs Bathroom* is flooding!, 
+            {% endif %}
+            {% if is_state('binary_sensor.downstairs_bathroom_water_sensor', 'on') %}
+              *Downstairs Bathroom* is flooding!, 
+            {% endif %}
+            {% if is_state('binary_sensor.laundry_room_water_sensor', 'on') %}
+              *Laundry Room* is flooding!, 
+            {% endif %}
+            {% if is_state('binary_sensor.utility_room_water_sensor', 'on') %}
+              *Utility Room* is flooding!, 
+            {% endif %}
+            Better get a boat...

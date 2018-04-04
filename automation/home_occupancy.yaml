@@ -1,8 +1,6 @@
 - alias: 'Home Occupancy - Leaving'
   trigger:
     platform: state 
-    #entity_id: group.occupancy
-    #to: 'off'
     entity_id: group.family
     to: 'not_home'
 
@@ -25,8 +23,6 @@
 - alias: 'Home Occupancy - Arriving'
   trigger:
     platform: state 
-    #entity_id: group.occupancy
-    #to: 'on'
     entity_id: group.family
     to: 'home'
 
@@ -38,7 +34,6 @@
     - service: notify.telegram
       data:
         title: 'HomeAssistant Notification'
-        #message: 'Home is Occupied! Setting Ecobee to _Home_'
         message: >
             {% if is_state('device_tracker.sam', 'home') %}
               *Sam* has returned, 
