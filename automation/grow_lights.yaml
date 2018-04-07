@@ -10,7 +10,7 @@
 - alias: 'Grow Lights Off'
   trigger:
     platform: time
-    at: '00:00:00'
+    at: '20:00:00'
 
   action:
     - service: homeassistant.turn_off
