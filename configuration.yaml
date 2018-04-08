@@ -22,9 +22,18 @@ panel_custom:
 # Enables configuration UI
 config:
 
+panel_iframe:
+  router:
+    title: 'Dashboard'
+    url: 'https://sam-wright.duckdns.org/local/dashboard.html'
+    icon: mdi:view-dashboard
+
 http:
   api_password: !secret homeassistant_pass
-  # Uncomment this if you are using SSL or running in Docker etc
+  cors_allowed_origins:
+    - https://sam-wright.duckdns.org
+
+
   base_url: sam-wright.duckdns.org
   ssl_certificate: !secret ssl_cert 
   ssl_key: !secret ssl_key
