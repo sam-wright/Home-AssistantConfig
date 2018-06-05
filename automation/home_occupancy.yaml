@@ -35,10 +35,10 @@
       data:
         title: 'HomeAssistant Notification'
         message: >
-            {% if is_state('device_tracker.sam', 'home') %}
+            {% if is_state('device_tracker.google_maps_105538345093897058433', 'home') %}
               *Sam* has returned, 
             {% endif %}
-            {% if is_state('device_tracker.rachel', 'home') %}
+            {% if is_state('device_tracker.google_maps_109866597080310477669', 'home') %}
               *Rachel* has returned, 
             {% endif %}
             Setting Ecobee to _Home_

@@ -1,4 +1,5 @@
 Family:
   entities:
-    - device_tracker.sam
-    - device_tracker.rachel
+    #- device_tracker.sam
+    - device_tracker.google_maps_105538345093897058433
+    - device_tracker.google_maps_109866597080310477669

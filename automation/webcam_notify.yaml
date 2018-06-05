@@ -1,5 +1,4 @@
 - alias: 'Webcam Notifier'
-
   trigger:
     - platform: state
       entity_id: sensor.theo_cam_events 
@@ -20,18 +19,18 @@
       message: 'Zoneminder: Motion Detected!'
       title: 'HomeAssistant Notification'
 
-- alias: 'Webcam Monitoring On'
 
+- alias: 'Webcam Monitoring On'
   trigger: 
   - platform: time
-    at: '00:00'
+    at: '00:30:00'
   
   action:
     - service: homeassistant.turn_on
       entity_id: switch.theo_cam_state 
   
-- alias: 'Webcam Monitoring Off'
 
+- alias: 'Webcam Monitoring Off'
   trigger: 
   - platform: time
     at: '07:00'

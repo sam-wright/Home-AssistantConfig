@@ -58,3 +58,12 @@ sensor.alarm_level_2:
   hidden: true
 sensor.alarm_level_4:
   hidden: true
+sensor.vision_zp3111_multisensor_4in1_clock:
+  hidden: true
+binary_sensor.sensor:
+  hidden: true
+sensor.vision_zp3111_multisensor_4in1_sourcenodeid:
+  hidden: true
+sensor.vision_zp3111_multisensor_4in1_appliance:
+  hidden: true
+zone.home: {}

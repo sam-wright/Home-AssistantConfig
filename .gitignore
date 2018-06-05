@@ -26,3 +26,4 @@ ipchange.yaml
 .HA_VERSION
 *.mp3
 entity_registry.yaml
+*.cookies

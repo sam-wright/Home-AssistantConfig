@@ -116,6 +116,9 @@ telegram_bot:
       - !secret telegram_id
 
 notify:
+  - name: Push
+    platform: html5
+
   - name: Telegram
     platform: telegram
     chat_id: !secret telegram_id
@@ -125,32 +128,32 @@ notify:
 #    platform: pushbullet
 #    api_key: !secret pushbullet_key
 
-scene:
-  - name: Morning
-    entities:
-      light.kitchen_accent_lights: on
-  
-  - name: Day
-    entities:
-      light.kitchen_accent_lights: on
-
-  - name: Sundown
-    entities:
-      light.kitchen_accent_lights: on
-
-  - name: Evening
-    entities:
-      light.kitchen_accent_lights: on
-  
-  - name: Sleep
-    entities:
-      light.kitchen_accent_lights: on
+# scene:
+#   - name: Morning
+#     entities:
+#       light.kitchen_accent_lights: on
+#   
+#   - name: Day
+#     entities:
+#       light.kitchen_accent_lights: on
+# 
+#   - name: Sundown
+#     entities:
+#       light.kitchen_accent_lights: on
+# 
+#   - name: Evening
+#     entities:
+#       light.kitchen_accent_lights: on
+#   
+#   - name: Sleep
+#     entities:
+#       light.kitchen_accent_lights: on
 
 
 ifttt:
   key: !secret ifttt_key
 
-
+zone: !include_dir_merge_list zones
 light: !include_dir_merge_list lights
 input_boolean: !include_dir_merge_named input_booleans
 input_select: !include_dir_merge_named input_select

@@ -1,0 +1,5 @@
+- name: Sarcos 
+  latitude: !secret sarcos_lat
+  longitude: !secret sarcos_long
+  radius: 100
+  icon: mdi:robot
