@@ -27,3 +27,4 @@ ipchange.yaml
 *.mp3
 entity_registry.yaml
 *.cookies
+.config_entries.json
