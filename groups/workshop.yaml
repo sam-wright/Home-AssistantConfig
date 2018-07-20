@@ -1,0 +1,15 @@
+workshop:
+  name: Workshop
+  icon: mdi:hammer
+  control: hidden
+  entities:
+  - sensor.alarm_level_6
+  - sensor.alarm_type_6
+  - sensor.vision_zp3111_multisensor_4in1_appliance
+  - sensor.vision_zp3111_multisensor_4in1_burglar
+  - sensor.vision_zp3111_multisensor_4in1_luminance
+  - sensor.vision_zp3111_multisensor_4in1_relative_humidity
+  - sensor.vision_zp3111_multisensor_4in1_temperature
+  
+
+

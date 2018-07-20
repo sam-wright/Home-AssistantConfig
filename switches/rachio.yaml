@@ -1,3 +1,3 @@
 - platform: rachio
-  access_token: !secret rachio_api
+
   #manual_run_mins: {{ states('input_text.manual_irrigation_time') }}

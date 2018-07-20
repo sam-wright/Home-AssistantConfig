@@ -102,6 +102,10 @@ wemo:
 ecobee:
   api_key: !secret ecobee_key
 
+# Rachio component
+rachio:
+    api_key: !secret rachio_api
+
 climate:
   - platform: ecobee
 
@@ -131,26 +135,6 @@ notify:
 #    platform: pushbullet
 #    api_key: !secret pushbullet_key
 
-# scene:
-#   - name: Morning
-#     entities:
-#       light.kitchen_accent_lights: on
-#   
-#   - name: Day
-#     entities:
-#       light.kitchen_accent_lights: on
-# 
-#   - name: Sundown
-#     entities:
-#       light.kitchen_accent_lights: on
-# 
-#   - name: Evening
-#     entities:
-#       light.kitchen_accent_lights: on
-#   
-#   - name: Sleep
-#     entities:
-#       light.kitchen_accent_lights: on
 
 
 ifttt:
