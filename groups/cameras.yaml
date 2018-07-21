@@ -3,7 +3,9 @@ Cameras:
   # view: true
   # control: true
   entities:
-  - switch.theo_cam_state
-  - sensor.theo_cam_status
-  - sensor.theo_cam_events
-  - binary_sensor.theo_cam_events_trend
+  - binary_sensor.theo_camera
+  - camera.theo_camera
+      # - switch.theo_cam_state
+      # - sensor.theo_cam_status
+      # - sensor.theo_cam_events
+      # - binary_sensor.theo_cam_events_trend

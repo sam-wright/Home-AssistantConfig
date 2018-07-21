@@ -1,0 +1,12 @@
+- alias: 'Theo Camera Notification'
+  condition: []
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.theo_camera 
+      to: 'on'
+
+  action:
+    service: notify.telegram
+    data: 
+      message: 'Theo Camera: Motion Detected!'
+      title: 'HomeAssistant Notification'

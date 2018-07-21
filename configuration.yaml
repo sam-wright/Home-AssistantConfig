@@ -135,6 +135,19 @@ notify:
 #    platform: pushbullet
 #    api_key: !secret pushbullet_key
 
+ffmpeg:
+
+camera:
+  - platform: mjpeg
+    name: Theo Camera
+    mjpeg_url: http://192.168.1.153:8083
+    username: user
+    password: ""
+    #  - platform: yi
+    #    name: Camera
+    #    host: '192.168.1.21'
+    #    password: Tombraider1YiHack
+    #    ffmpeg_arguments: '-vf scale=800:450'
 
 
 ifttt:

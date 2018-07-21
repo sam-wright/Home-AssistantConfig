@@ -1,0 +1,5 @@
+- platform: mjpeg
+  name: Theo Camera
+  mjpeg_url: !secret theo_cam_addr 
+  username: !secret theo_cam_user
+  password: !secret theo_cam_pass
