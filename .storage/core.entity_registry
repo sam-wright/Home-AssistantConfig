@@ -1,0 +1,659 @@
+{
+    "data": {
+        "entities": [
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.zone_5",
+                "name": null,
+                "platform": "rachio",
+                "unique_id": "b07e447b-7872-4978-989e-48e8b60bf1c8-04cee8f6-7642-435d-a07f-18a1c140e742"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.zone_8",
+                "name": null,
+                "platform": "rachio",
+                "unique_id": "b07e447b-7872-4978-989e-48e8b60bf1c8-23e10916-ee1a-4d03-a050-6ccab8e4dd50"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.zone_6",
+                "name": null,
+                "platform": "rachio",
+                "unique_id": "b07e447b-7872-4978-989e-48e8b60bf1c8-161be9ba-73e7-44ae-a487-9ac0438c4f06"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.front_yard_1",
+                "name": null,
+                "platform": "rachio",
+                "unique_id": "b07e447b-7872-4978-989e-48e8b60bf1c8-efa756f8-320f-4d61-8d93-d30a5eab5dbd"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.zone_7",
+                "name": null,
+                "platform": "rachio",
+                "unique_id": "b07e447b-7872-4978-989e-48e8b60bf1c8-bd472df4-f884-4a86-a29a-4cca69c58c74"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.back_yard_2",
+                "name": null,
+                "platform": "rachio",
+                "unique_id": "b07e447b-7872-4978-989e-48e8b60bf1c8-71d1ad13-7baf-45dc-badc-eb9efedd4f3a"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.front_yard_2",
+                "name": null,
+                "platform": "rachio",
+                "unique_id": "b07e447b-7872-4978-989e-48e8b60bf1c8-dda5e4ac-2ed5-4f2e-b484-2b44d6970029"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.back_yard_1",
+                "name": null,
+                "platform": "rachio",
+                "unique_id": "b07e447b-7872-4978-989e-48e8b60bf1c8-a0ee6f3c-0f52-4e6f-b607-abec319a82dd"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.bedroom_lamp_sam",
+                "name": null,
+                "platform": "wemo",
+                "unique_id": "221728K0102887"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.downstairs_bedroom_lamp",
+                "name": null,
+                "platform": "wemo",
+                "unique_id": "221728K010296E"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.bedroom_lamp_rachel",
+                "name": null,
+                "platform": "wemo",
+                "unique_id": "221710K010240E"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.shop_lights",
+                "name": null,
+                "platform": "wemo",
+                "unique_id": "221709K01035A2"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.fire_tv",
+                "name": null,
+                "platform": "plex",
+                "unique_id": "cffb432ca64b71fe-com-plexapp-android"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.kindle_fire_hdx_89",
+                "name": null,
+                "platform": "plex",
+                "unique_id": "cdabd7823b4eb354-com-plexapp-android"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.oneplus_a5000",
+                "name": null,
+                "platform": "plex",
+                "unique_id": "d9f47bd2773ccfdb-com-plexapp-android"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.front_room_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "2-72057594076282880"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.porch_light_switch",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "3-72057594093060096"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.allergy_index_tomorrow",
+                "name": null,
+                "platform": "pollen",
+                "unique_id": "84124_allergy_index_tomorrow"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.allergy_index_today",
+                "name": null,
+                "platform": "pollen",
+                "unique_id": "84124_allergy_index_today"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.allergy_index_forecasted_average",
+                "name": null,
+                "platform": "pollen",
+                "unique_id": "84124_allergy_index_forecasted_average"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.cold__flu_forecasted_average",
+                "name": null,
+                "platform": "pollen",
+                "unique_id": "84124_cold__flu_forecasted_average"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.allergy_index_yesterday",
+                "name": null,
+                "platform": "pollen",
+                "unique_id": "84124_allergy_index_yesterday"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.allergy_index_historical_average",
+                "name": null,
+                "platform": "pollen",
+                "unique_id": "84124_allergy_index_historical_average"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.us_air_pollution_level",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "40.777,-111.888_pollution_level"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.us_air_quality_index",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "40.777,-111.888_aqi"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.us_main_pollutant",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "40.777,-111.888_main_pollutant"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.bedroom",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "f8f6e4fe-d453-1ee2-a334-8e8d36c87355"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "binary_sensor.utility_room_water_sensor",
+                "name": "Utility Room Water Sensor",
+                "platform": "zwave",
+                "unique_id": "4-72057594110017536"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.alarm_type",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082497"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.alarm_level",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082513"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.aeotec_dsb45_water_sensor_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082529"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.aeotec_dsb45_water_sensor_flood",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "4-72057594111082625"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "binary_sensor.downstairs_bathroom_water_sensor",
+                "name": "Downstairs Bathroom Water Sensor",
+                "platform": "zwave",
+                "unique_id": "5-72057594126794752"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.alarm_type_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859713"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.alarm_level_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859729"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.aeotec_dsb45_water_sensor_sourcenodeid_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859745"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.aeotec_dsb45_water_sensor_flood_2",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "5-72057594127859841"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "binary_sensor.laundry_room_water_sensor",
+                "name": "Laundry Room Water Sensor",
+                "platform": "zwave",
+                "unique_id": "6-72057594143571968"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.alarm_type_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144636929"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.alarm_level_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144636945"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.aeotec_dsb45_water_sensor_sourcenodeid_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144636961"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.aeotec_dsb45_water_sensor_flood_3",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "6-72057594144637057"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "binary_sensor.upstairs_bathroom_water_sensor",
+                "name": "Upstairs Bathroom Water Sensor",
+                "platform": "zwave",
+                "unique_id": "7-72057594160349184"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.alarm_type_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414145"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.alarm_level_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414161"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.aeotec_dsb45_water_sensor_sourcenodeid_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414177"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.aeotec_dsb45_water_sensor_flood_4",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "7-72057594161414273"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.kindle_fire_hdx_89_2",
+                "name": null,
+                "platform": "plex",
+                "unique_id": "a6bfd707ea1b9d84-com-plexapp-android"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.alarm_type_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191361"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.alarm_level_5",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191377"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "binary_sensor.workshop_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177126400"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.workshop_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177142802"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.workshop_luminance",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177142834"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.workshop_relative_humidity",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594177142866"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.workshop_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191393"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.workshop_burglar",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191521"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.workshop_power_management",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191537"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.workshop_emergency",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191569"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.workshop_clock",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191585"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.workshop_appliance",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "8-72057594178191601"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.alarm_type_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968577"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.alarm_level_6",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968593"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "binary_sensor.sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193903616"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_temperature",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193920018"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_luminance",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193920050"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_relative_humidity",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594193920082"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_sourcenodeid",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968609"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_burglar",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968737"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_clock",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968801"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.vision_zp3111_multisensor_4in1_appliance",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "9-72057594194968817"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "media_player.theos_bedroom_music",
+                "name": null,
+                "platform": "cast",
+                "unique_id": "99a36d1e-481b-3c7f-22ae-91e435f582d8"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.aeotec_zw090_zstick_gen5_us",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-1"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.front_room",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-2"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.porch_light",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-3"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.utility_room_water_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-4"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.downstairs_bathroom_water_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-5"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.laundry_room_water_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-6"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.upstairs_bathroom_water_sensor",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-7"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.workshop",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-9"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "switch.kitchen1",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "10-72057594210500608"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "zwave.kitchen1",
+                "name": null,
+                "platform": "zwave",
+                "unique_id": "node-10"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.us_main_pollutant_2",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "40.677411,-111.858479_main_pollutant"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.us_air_quality_index_2",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "40.677411,-111.858479_aqi"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.us_air_pollution_level_2",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "40.677411,-111.858479_pollution_level"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.us_air_quality_index_3",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "40.677462,-111.858385_aqi"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.us_main_pollutant_3",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "40.677462,-111.858385_main_pollutant"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.us_air_pollution_level_3",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "40.677462,-111.858385_pollution_level"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.us_air_pollution_level_4",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "40.677462,-111.858385_us_air_pollution_level"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.us_main_pollutant_4",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "40.677462,-111.858385_us_main_pollutant"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.us_air_quality_index_4",
+                "name": null,
+                "platform": "airvisual",
+                "unique_id": "40.677462,-111.858385_us_air_quality_index"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.allergy_index_forecasted_average_2",
+                "name": null,
+                "platform": "pollen",
+                "unique_id": "84124_allergy_average_forecasted"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.cold__flu_forecasted_average_2",
+                "name": null,
+                "platform": "pollen",
+                "unique_id": "84124_disease_average_forecasted"
+            },
+            {
+                "config_entry_id": null,
+                "entity_id": "sensor.allergy_index_historical_average_2",
+                "name": null,
+                "platform": "pollen",
+                "unique_id": "84124_allergy_average_historical"
+            }
+        ]
+    },
+    "key": "core.entity_registry",
+    "version": 1
+}
