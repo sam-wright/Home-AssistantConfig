@@ -3,8 +3,10 @@ Cameras:
   # view: true
   # control: true
   entities:
-  - binary_sensor.theo_camera
   - camera.theo_camera
+  - camera.max_camera
+  - camera.front_room_camera
+  - camera.garage_camera
       # - switch.theo_cam_state
       # - sensor.theo_cam_status
       # - sensor.theo_cam_events

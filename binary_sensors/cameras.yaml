@@ -1,3 +1,0 @@
-- platform: mqtt
-  name: Theo Camera
-  state_topic: "cameras/theocam/motion"

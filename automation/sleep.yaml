@@ -5,17 +5,19 @@
 
   action:
     - service: homeassistant.turn_off
-      entity_id: switch.bedroom_lamp 
+      entity_id: switch.bedroom_lamp_rachel 
     - service: homeassistant.turn_off
-      entity_id: switch.downstairs_bedroom_lamp 
+      entity_id: switch.bedroom_lamp_sam 
+    - service: homeassistant.turn_off
+      entity_id: switch.downstairs_bedroom_lamp
     - service: homeassistant.turn_off
       entity_id: light.kitchen_accent_lights
     - service: homeassistant.turn_off
       entity_id: switch.porch_light_switch
     - service: homeassistant.turn_off
       entity_id: switch.front_room_switch
-    - service: homeassistant.turn_off
-      entity_id: switch.shop_lights
+     #- service: homeassistant.turn_off
+    #  entity_id: switch.shop_lights
     #- service: homeassistant.turn_off
     #  entity_id: switch.tree_lights
    

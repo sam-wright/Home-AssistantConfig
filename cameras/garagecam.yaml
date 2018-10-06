@@ -1,6 +1,5 @@
 - platform: yi
-  name: Theo Camera
-  host: '192.168.1.172'
+  name: Garage Camera
+  host: '192.168.1.176'
   password: !secret yi_pass 
   ffmpeg_arguments: '-vf scale=800:450'
-

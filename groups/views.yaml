@@ -15,7 +15,8 @@ Inside:
     - group.occupancy
     - group.cameras
     - group.temps
-    - switch.bedroom_lamp
+    - switch.bedroom_lamp_sam
+    - switch.bedroom_lamp_rachel
     - climate.my_ecobee
     - group.network
     - input_boolean.guest_mode

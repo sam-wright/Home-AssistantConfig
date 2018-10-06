@@ -82,8 +82,8 @@ logbook:
 # Track the sun
 sun:
 
-zoneminder:
-  host: !secret zoneminder_address 
+# zoneminder:
+#   host: !secret zoneminder_address 
 
 # KODI Support
 media_player:
@@ -135,23 +135,10 @@ notify:
 #    platform: pushbullet
 #    api_key: !secret pushbullet_key
 
-ffmpeg:
-
-camera:
-  - platform: mjpeg
-    name: Theo Camera
-    mjpeg_url: http://192.168.1.153:8083
-    username: user
-    password: ""
-    #  - platform: yi
-    #    name: Camera
-    #    host: '192.168.1.21'
-    #    password: Tombraider1YiHack
-    #    ffmpeg_arguments: '-vf scale=800:450'
-
 
 ifttt:
   key: !secret ifttt_key
+
 
 zone: !include_dir_merge_list zones
 light: !include_dir_merge_list lights
@@ -166,5 +153,6 @@ sensor: !include_dir_merge_list sensors
 switch: !include_dir_merge_list switches
 binary_sensor: !include_dir_merge_list binary_sensors
 cover: !include_dir_merge_list covers
+camera: !include_dir_merge_list cameras
 
 

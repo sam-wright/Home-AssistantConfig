@@ -1,0 +1,98 @@
+- platform: mqtt
+  name: Master Bedroom Closet Window 
+  state_topic: "/security/sensors345/992664/alarm"
+  payload_on: "ALARM"
+  payload_off: "OK"
+  device_class: opening
+
+- platform: mqtt
+  name: Front Door 
+  state_topic: "/security/sensors345/1019535/alarm"
+  payload_on: "ALARM"
+  payload_off: "OK"
+  device_class: opening
+
+- platform: mqtt
+  name: Test Door1 
+  state_topic: "/security/sensors345/976578/alarm"
+  payload_on: "ALARM"
+  payload_off: "OK"
+  device_class: opening
+
+- platform: mqtt
+  name: Theo's Bedroom Window 
+  state_topic: "/security/sensors345/932332/alarm"
+  payload_on: "ALARM"
+  payload_off: "OK"
+  device_class: opening
+
+- platform: mqtt
+  name: Kitchen Window 
+  state_topic: "/security/sensors345/992662/alarm"
+  payload_on: "ALARM"
+  payload_off: "OK"
+  device_class: opening
+
+- platform: mqtt
+  name: Downstairs Bedroom Window
+  state_topic: "/security/sensors345/992172/alarm"
+  payload_on: "ALARM"
+  payload_off: "OK"
+  device_class: opening
+
+- platform: mqtt
+  name: Interior Garage Door
+  state_topic: "/security/sensors345/1018334/alarm"
+  payload_on: "ALARM"
+  payload_off: "OK"
+  device_class: opening
+
+- platform: mqtt
+  name: Downstairs Bathroom Window
+  state_topic: "/security/sensors345/993092/alarm"
+  payload_on: "ALARM"
+  payload_off: "OK"
+  device_class: opening
+
+- platform: mqtt
+  name: North Shed Door 
+  state_topic: "/security/sensors345/1020528/alarm"
+  payload_on: "ALARM"
+  payload_off: "OK"
+  device_class: opening
+
+- platform: mqtt
+  name: Test Door2 
+  state_topic: "/security/sensors345/993090/alarm"
+  payload_on: "ALARM"
+  payload_off: "OK"
+  device_class: opening
+
+- platform: mqtt
+  name: Back Door 
+  state_topic: "/security/sensors345/763628/alarm"
+  payload_on: "ALARM"
+  payload_off: "OK"
+  device_class: opening
+
+- platform: mqtt
+  name: Test Door6 
+  state_topic: "/security/sensors345/495823/alarm"
+  payload_on: "ALARM"
+  payload_off: "OK"
+  device_class: opening
+
+- platform: mqtt
+  name: Exterior Garage Door 
+  state_topic: "/security/sensors345/1020512/alarm"
+  payload_on: "ALARM"
+  payload_off: "OK"
+  device_class: opening
+
+
+- platform: mqtt
+  name: 345MHz RX Fault
+  state_topic: "/security/sensors345/rx_status"
+  payload_on: "FAILED"
+  payload_off: "OK"
+  device_class: safety
