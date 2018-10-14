@@ -1,0 +1,11 @@
+Dyson:
+  # name: Cameras
+  # view: true
+  # control: true
+  entities:
+  - fan.bedroom
+  - sensor.bedroom_aqi
+  - sensor.bedroom_dust
+  - sensor.bedroom_filter_life
+  - sensor.bedroom_humidity
+  - sensor.bedroom_temperature_2

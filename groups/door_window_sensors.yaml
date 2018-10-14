@@ -1,0 +1,33 @@
+Door_ Window_ Sensors:
+  # name: Cameras
+  # view: true
+  # control: true
+  entities:
+  - binary_sensor.master_bedroom_closet_window 
+  - binary_sensor.front_door 
+  - binary_sensor.test_door1 
+  - binary_sensor.theos_bedroom_window 
+  - binary_sensor.kitchen_window 
+  - binary_sensor.downstairs_bedroom_window
+  - binary_sensor.interior_garage_door
+  - binary_sensor.downstairs_bathroom_window
+  - binary_sensor.north_shed_door 
+  - binary_sensor.test_door2 
+  - binary_sensor.back_door 
+  - binary_sensor.test_door6 
+  - binary_sensor.exterior_garage_door 
+  - binary_sensor.345mHz_rx_fault
+  - sensor.master_beedroom_closet_window_status 
+  - sensor.test_door1_status 
+  - sensor.theos_bedroom_window_status 
+  - sensor.kitchen_window_status 
+  - sensor.downstairs_bedroom_window_status 
+  - sensor.interior_garage_status 
+  - sensor.downstairs_bathroom_window_status 
+  - sensor.north_shed_door_status 
+  - sensor.front_door_status 
+  - sensor.test_door2_Status 
+  - sensor.back_door_status 
+  - sensor.test_door6_status 
+  - sensor.exterior_garage_door_status 
+
