@@ -139,6 +139,10 @@ notify:
 ifttt:
   key: !secret ifttt_key
 
+dyson:
+    username: !secret dyson_username 
+    password: !secret dyson_pass 
+    language: US
 
 zone: !include_dir_merge_list zones
 light: !include_dir_merge_list lights

@@ -28,3 +28,4 @@ ipchange.yaml
 entity_registry.yaml
 *.cookies
 .config_entries.json
+.storage/*
