@@ -5,12 +5,18 @@
     offset: '-00:30:00'
  
   action:
-#    - service: homeassistant.turn_on
-#      entity_id: switch.tree_lights 
     - service: homeassistant.turn_on
       entity_id: light.kitchen_accent_lights
     - service: homeassistant.turn_on
       entity_id: switch.porch_light_switch
+    - service: homeassistant.turn_on
+      entity_id: switch.front_room_lamp
+    - service: homeassistant.turn_on
+      entity_id: switch.bedroom_lamp_sam
+    - service: homeassistant.turn_on
+      entity_id: switch.bedroom_lamp_rachel
+    - service: homeassistant.turn_on
+      entity_id: switch.downstairs_bedroom_lamp 
    
 
   
