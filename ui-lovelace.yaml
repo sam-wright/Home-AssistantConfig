@@ -128,6 +128,8 @@ views:
     theme: dark-mode
     # The cards to show on this view.
     cards:      
+      - type: weather-forecast
+        entity: weather.dark_sky
       - type: entities
         title: Dyson
         entities:
@@ -167,7 +169,7 @@ views:
           - sensor.living_room_temperature 
           - sensor.my_ecobee_temperature
           - sensor.my_ecobee_humidity
-         
+      
 
   # Specify a tab icon if you want the view tab to be an icon.
   - icon: mdi:home-assistant
