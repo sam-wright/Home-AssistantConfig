@@ -29,3 +29,4 @@ entity_registry.yaml
 *.cookies
 .config_entries.json
 .storage/*
+ip_bans.yaml
