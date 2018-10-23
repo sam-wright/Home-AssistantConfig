@@ -128,8 +128,19 @@ views:
     theme: dark-mode
     # The cards to show on this view.
     cards:      
-      - type: weather-forecast
-        entity: weather.dark_sky
+      - type: vertical-stack
+        cards:
+        - type: weather-forecast
+          entity: weather.dark_sky
+        - type: entities
+          entities:
+            - sensor.dark_sky_minutely_summary
+            - sensor.dark_sky_summary
+            - sun.sun
+        - type: sensor
+          title: Outside Temperature
+          entity: sensor.dark_sky_temperature
+
       - type: entities
         title: Dyson
         entities:
@@ -137,38 +148,44 @@ views:
           - sensor.bedroom_aqi
           - sensor.bedroom_dust
           - sensor.bedroom_filter_life
-          - sensor.bedroom_humidity
-          - sensor.bedroom_temperature_2
   
       - type: vertical-stack
         cards:
-        - type: sensor
-          title: Outside Temperature
-          entity: sensor.dark_sky_temperature
+
+        - type: entities
+          title: Air Quality
+          entities:
+            - sensor.aqi
+            - sensor.us_air_quality_index_4
+            - sensor.waqi_salt_lake_city_utah
+            - sensor.us_main_pollutant_4
+            - sensor.us_air_pollution_level_4
+
         - type: entities
           title: Outside
           entities:
-            - sensor.waqi_salt_lake_city_utah
             - sensor.allergy_index_today
             - sensor.allergy_index_tomorrow
             - sensor.allergy_index_yesterday
             - sensor.allergy_index_forecasted_average_2
             - sensor.allergy_index_historical_average_2
             - sensor.cold__flu_forecasted_average_2
-            - sensor.dark_sky_minutely_summary
-            - sensor.dark_sky_summary
-            - sun.sun
+
 
       - type: entities
         title: Inside
         entities:
           - sensor.bedroom_temperature
+          - sensor.bedroom_temperature_2
           - sensor.theo_room_temperature
           - sensor.front_room_temperature
           - sensor.kitchen_temperature 
           - sensor.living_room_temperature 
           - sensor.my_ecobee_temperature
+          - sensor.vision_zp3111_multisensor_4in1_temperature
           - sensor.my_ecobee_humidity
+          - sensor.bedroom_humidity
+          - sensor.vision_zp3111_multisensor_4in1_relative_humidity
       
 
   # Specify a tab icon if you want the view tab to be an icon.
