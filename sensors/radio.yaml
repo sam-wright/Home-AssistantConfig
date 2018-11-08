@@ -1,5 +1,5 @@
 - platform: mqtt
-  name: Master Beedroom Closet Window Status 
+  name: Master Bedroom Closet Window Status 
   state_topic: "/security/sensors345/992664/status"
 
 - platform: mqtt
@@ -19,7 +19,7 @@
   state_topic: "/security/sensors345/992172/status"
 
 - platform: mqtt
-  name: Interior Garage Status 
+  name: Interior Garage Door Status
   state_topic: "/security/sensors345/1018334/status"
 
 - platform: mqtt
