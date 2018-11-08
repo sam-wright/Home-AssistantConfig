@@ -1,6 +1,7 @@
 - platform: google_maps 
   username: !secret maps_user
   password: !secret maps_pass 
+  scan_interval: 300
   new_device_defaults:
     track_new_devices: true
 
