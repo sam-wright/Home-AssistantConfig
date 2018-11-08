@@ -1,6 +1,6 @@
 title: My Awesome Home
 # Include external resources
-resources:  
+resources:
 #  - url: /local/my-custom-card.js
 #    type: js
 #  - url: /local/my-webfont.css
@@ -12,7 +12,7 @@ excluded_entities:
   - weblink.router
 views:
     # View tab title.
-  - title: Occupancy 
+  - title: Occupancy
     # Optional unique id for direct access /lovelace/${id}
     id: occupancy
     # Optional background (overwrites the global background).
@@ -20,39 +20,43 @@ views:
     # Each view can have a different theme applied. Theme should be defined in the frontend.
     theme: dark-mode
     # The cards to show on this view.
-    cards:        
+    cards:
       # The filter card will filter entities for their state
-      - type: entity-filter
+      - id: 21c724aa60dd4e18b56967dd34babadc  # Automatically created id
+        type: entity-filter
         entities:
           - device_tracker.google_maps_105538345093897058433    # Sam
           - device_tracker.google_maps_109866597080310477669    # Rachel
         state_filter:
-          - 'home'
+          - home
         card:
           type: glance
           title: People
 
-      - type: entities 
+      - id: 28a68971166c45d8a9b04564c02069bb  # Automatically created id
+        type: entities
         title: Cameras
-        entities: 
-         - camera.theo_camera 
-         - camera.max_camera
-         - camera.front_room_camera
-         - camera.garage_camera
-       
-      - type: entities
-        title: Room Occupancy 
+        entities:
+          - camera.theo_camera
+          - camera.max_camera
+          - camera.front_room_camera
+          - camera.garage_camera
+
+      - id: a708136b260f46e8ba803c5a82c7683d  # Automatically created id
+        type: entities
+        title: Room Occupancy
         entities:
           - binary_sensor.bedroom_occupancy
-          - binary_sensor.front_room_occupancy 
+          - binary_sensor.front_room_occupancy
           - binary_sensor.kitchen_occupancy
           - binary_sensor.living_room_occupancy
           - binary_sensor.my_ecobee_occupancy
           - binary_sensor.theo_room_occupancy
 
-      - type: entities
+      - id: 6918030fe090474d9ed808dd974ca237  # Automatically created id
+        type: entities
         title: Door Window Sensors
-        entities: 
+        entities:
           - binary_sensor.345mhz_rx_fault
           - binary_sensor.back_door
           - binary_sensor.downstairs_bathroom_window
@@ -67,14 +71,32 @@ views:
           - binary_sensor.test_door2
           - binary_sensor.test_door6
           - binary_sensor.theos_bedroom_window
-        
+      
       - type: entities
+        title: Door Window Status
+        entities:
+          - sensor.back_door_status
+          - sensor.downstairs_bathroom_window_status
+          - sensor.downstairs_bedroom_window_status
+          - sensor.exterior_garage_door_status
+          - sensor.front_door_status
+          - sensor.interior_garage_door_status
+          - sensor.kitchen_window_status
+          - sensor.master_bedroom_closet_window_status
+          - sensor.north_shed_door_status
+          - sensor.test_door1_status
+          - sensor.test_door2_status
+          - sensor.test_door6_status
+          - sensor.theos_bedroom_window_status
+
+      - id: 3f966346367e4afb8f78cbb068265f70  # Automatically created id
+        type: entities
         title: Garage
         entities:
           - binary_sensor.garage_door
           - cover.garage_door
 
-  - title: Switches 
+  - title: Switches
     # Optional unique id for direct access /lovelace/${id}
     id: switches
     # Optional background (overwrites the global background).
@@ -82,16 +104,19 @@ views:
     # Each view can have a different theme applied. Theme should be defined in the frontend.
     theme: dark-mode
     # The cards to show on this view.
-    cards:      
-      - type: entities
+    cards:
+      - id: b618b6b78d5440709273b87767a28990  # Automatically created id
+        type: entities
         title: Garage
         entities:
           - binary_sensor.garage_door
           - cover.garage_door
 
-      - type: entities
-        title: Light Switches
+      - id: 1562f7c4498c4b5aa8574d0359e6e30b  # Automatically created id
+        type: entities
+        title: Lights
         entities:
+          - light.kitchen_accent_lights
           - switch.bedroom_lamp_rachel
           - switch.bedroom_lamp_sam
           - switch.downstairs_bedroom_lamp
@@ -99,17 +124,19 @@ views:
           - switch.front_room_switch
           - switch.kitchen1
 
-      - type: entities
+      - id: 044688824d9a4312a71ffb84841a754c  # Automatically created id
+        type: entities
         title: Sprinklers
         entities:
           - binary_sensor.rachiod4ee99_online
           - switch.rachiod4ee99_in_standby_mode
           - switch.front_yard_1_2
           - switch.front_yard_2_2
-          - switch.back_yard_1_2
-          - switch.back_yard_2_2
+            #- switch.back_yard_1_2
+            #- switch.back_yard_2_2
 
-      - type: entities
+      - id: 646e80a154314bd2b7d13656b84b999f  # Automatically created id
+        type: entities
         title: Dyson
         entities:
           - fan.bedroom
@@ -119,7 +146,7 @@ views:
           - sensor.bedroom_humidity
           - sensor.bedroom_temperature_2
 
-  - title: Environment 
+  - title: Environment
     # Optional unique id for direct access /lovelace/${id}
     id: environment
     # Optional background (overwrites the global background).
@@ -127,86 +154,93 @@ views:
     # Each view can have a different theme applied. Theme should be defined in the frontend.
     theme: dark-mode
     # The cards to show on this view.
-    cards:      
-      - type: vertical-stack
+    cards:
+      - id: 96fb5e32185b4f96b470eafc93cf44e0  # Automatically created id
+        type: vertical-stack
         cards:
-        - type: weather-forecast
-          entity: weather.dark_sky
-        - type: entities
-          entities:
-            - sensor.dark_sky_minutely_summary
-            - sensor.dark_sky_summary
-            - sun.sun
-        - type: sensor
-          title: Outside Temperature
-          entity: sensor.dark_sky_temperature
+          - type: weather-forecast
+            entity: weather.dark_sky
+          - type: entities
+            entities:
+              - sensor.dark_sky_minutely_summary
+              - sensor.dark_sky_summary
+              - sun.sun
+          - type: sensor
+            title: Outside Temperature
+            entity: sensor.dark_sky_temperature
 
-      - type: entities
+      - id: e4bc25add76248e6a43e66c52b1bc8ec  # Automatically created id
+        type: entities
         title: Dyson
         entities:
           - fan.bedroom
           - sensor.bedroom_aqi
           - sensor.bedroom_dust
           - sensor.bedroom_filter_life
-  
-      - type: vertical-stack
+
+      - id: c6e1fa5d1ca24db5bd8893be0293a00c  # Automatically created id
+        type: vertical-stack
         cards:
 
-        - type: entities
-          title: Air Quality
-          entities:
-            - sensor.aqi
-            - sensor.us_air_quality_index_4
-            - sensor.waqi_salt_lake_city_utah
-            - sensor.us_main_pollutant_4
-            - sensor.us_air_pollution_level_4
+          - type: entities
+            title: Air Quality
+            entities:
+              - sensor.aqi
+              - sensor.us_air_quality_index_4
+              - sensor.waqi_salt_lake_city_utah
+              - sensor.us_main_pollutant_4
+              - sensor.us_air_pollution_level_4
 
-        - type: entities
-          title: Outside
-          entities:
-            - sensor.allergy_index_today
-            - sensor.allergy_index_tomorrow
-            - sensor.allergy_index_yesterday
-            - sensor.allergy_index_forecasted_average_2
-            - sensor.allergy_index_historical_average_2
-            - sensor.cold__flu_forecasted_average_2
+          - type: entities
+            title: Outside
+            entities:
+              - sensor.allergy_index_today
+              - sensor.allergy_index_tomorrow
+              - sensor.allergy_index_yesterday
+              - sensor.allergy_index_forecasted_average_2
+              - sensor.allergy_index_historical_average_2
+              - sensor.cold__flu_forecasted_average_2
 
 
-      - type: entities
+      - id: 8243bab9c8ba4d8fa3b8b81c17ea8eec  # Automatically created id
+        type: entities
         title: Inside
         entities:
           - sensor.bedroom_temperature
           - sensor.bedroom_temperature_2
           - sensor.theo_room_temperature
           - sensor.front_room_temperature
-          - sensor.kitchen_temperature 
-          - sensor.living_room_temperature 
+          - sensor.kitchen_temperature
+          - sensor.living_room_temperature
           - sensor.my_ecobee_temperature
           - sensor.vision_zp3111_multisensor_4in1_temperature
           - sensor.my_ecobee_humidity
           - sensor.bedroom_humidity
           - sensor.vision_zp3111_multisensor_4in1_relative_humidity
-      
+
 
   # Specify a tab icon if you want the view tab to be an icon.
-  - icon: mdi:home-assistant
+  - id: 3  # Automatically created id
+    icon: mdi:home-assistant
     # Title of the view. Will be used as the tooltip for tab icon
     title: Second view
     cards:
         # Entities card will take a list of entities and show their state.
-        - type: entities
+      - id: 7d1bbdfb85ce472cb2b4838a9ac08ff3  # Automatically created id
+        type: entities
           # Title of the entities card
-          title: Example
+        title: Example
           # The entities here will be shown in the same order as specified.
           # Each entry is an entity ID or a map with extra options.
-          entities:
-            - light.kitchen
-            - switch.ac
-            - entity: light.living_room
+        entities:
+          - light.kitchen
+          - switch.ac
+          - entity: light.living_room
               # Override the name to use
-              name: LR Lights
+            name: LR Lights
           # The markdown card will render markdown text.
-        - type: markdown
-          title: Lovelace
-          content: >
-              Welcome to your **Lovelace UI**.      
+      - id: a90baedf453f4adb8f70824e2ba0c051  # Automatically created id
+        type: markdown
+        title: Lovelace
+        content: >
+          Welcome to your **Lovelace UI**.      
