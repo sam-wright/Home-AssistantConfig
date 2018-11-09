@@ -53,41 +53,103 @@ views:
           - binary_sensor.my_ecobee_occupancy
           - binary_sensor.theo_room_occupancy
 
-      - id: 6918030fe090474d9ed808dd974ca237  # Automatically created id
-        type: entities
-        title: Door Window Sensors
-        entities:
-          - binary_sensor.345mhz_rx_fault
-          - binary_sensor.back_door
-          - binary_sensor.downstairs_bathroom_window
-          - binary_sensor.downstairs_bedroom_window
-          - binary_sensor.exterior_garage_door
-          - binary_sensor.front_door
-          - binary_sensor.interior_garage_door
-          - binary_sensor.kitchen_window
-          - binary_sensor.master_bedroom_closet_window
-          - binary_sensor.north_shed_door
-          - binary_sensor.test_door1
-          - binary_sensor.test_door2
-          - binary_sensor.test_door6
-          - binary_sensor.theos_bedroom_window
-      
-      - type: entities
-        title: Door Window Status
-        entities:
-          - sensor.back_door_status
-          - sensor.downstairs_bathroom_window_status
-          - sensor.downstairs_bedroom_window_status
-          - sensor.exterior_garage_door_status
-          - sensor.front_door_status
-          - sensor.interior_garage_door_status
-          - sensor.kitchen_window_status
-          - sensor.master_bedroom_closet_window_status
-          - sensor.north_shed_door_status
-          - sensor.test_door1_status
-          - sensor.test_door2_status
-          - sensor.test_door6_status
-          - sensor.theos_bedroom_window_status
+      - type: vertical-stack
+        cards:
+          - type: glance
+            show_name: false
+            title: Back Door
+            entities:
+              - entity: binary_sensor.back_door
+              - entity: sensor.back_door_status
+                icon: mdi:check-outline
+
+          - type: glance
+            show_name: false
+            title: Downstairs Bathroom Window
+            entities:
+              - entity: binary_sensor.downstairs_bathroom_window
+              - entity: sensor.downstairs_bathroom_window_status
+                icon: mdi:check-outline
+
+          - type: glance
+            show_name: false
+            title: Exterior Garage Door 
+            entities:
+              - entity: binary_sensor.exterior_garage_door
+              - entity: sensor.exterior_garage_door_status
+                icon: mdi:check-outline
+
+          - type: glance
+            show_name: false
+            title: Front Door 
+            entities:
+              - entity: binary_sensor.front_door
+              - entity: sensor.front_door_status
+                icon: mdi:check-outline
+
+          - type: glance
+            show_name: false
+            title: Interior Garage Door
+            entities:
+              - entity: binary_sensor.interior_garage_door
+              - entity: sensor.interior_garage_door_status
+                icon: mdi:check-outline
+
+          - type: glance
+            show_name: false
+            title: Kitchen Window
+            entities:
+              - entity: binary_sensor.kitchen_window
+              - entity: sensor.kitchen_window_status
+                icon: mdi:check-outline
+
+          - type: glance
+            show_name: false
+            title: Bedroom Window
+            entities:
+              - entity: binary_sensor.master_bedroom_closet_window
+              - entity: sensor.master_bedroom_closet_window_status
+                icon: mdi:check-outline
+
+          - type: glance
+            show_name: false
+            title: North Shed Door
+            entities:
+              - entity: binary_sensor.north_shed_door
+              - entity: sensor.north_shed_door_status
+                icon: mdi:check-outline
+
+          - type: glance
+            show_name: false
+            title: Unused1
+            entities:
+              - entity: binary_sensor.test_door1
+              - entity: sensor.test_door1_status
+                icon: mdi:check-outline
+
+          - type: glance
+            show_name: false
+            title: Unused2
+            entities:
+              - entity: binary_sensor.test_door2
+              - entity: sensor.test_door2_status
+                icon: mdi:check-outline
+
+          - type: glance
+            show_name: false
+            title: Unused6
+            entities:
+              - entity: binary_sensor.test_door6
+              - entity: sensor.test_door6_status
+                icon: mdi:check-outline
+
+          - type: glance
+            show_name: false
+            title: Theo Bedroom Window
+            entities:
+              - entity: binary_sensor.theos_bedroom_window
+              - entity: sensor.theos_bedroom_window_status
+                icon: mdi:check-outline
 
       - id: 3f966346367e4afb8f78cbb068265f70  # Automatically created id
         type: entities
