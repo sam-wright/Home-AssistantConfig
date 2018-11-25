@@ -185,6 +185,12 @@ views:
           - switch.front_room_lamp
           - switch.front_room_switch
           - switch.kitchen1
+          - switch.tree_lights
+
+      - type: entities
+        title: Workshop
+        entities:
+          - switch.shop_lights
 
       - id: 044688824d9a4312a71ffb84841a754c  # Automatically created id
         type: entities
@@ -194,8 +200,8 @@ views:
           - switch.rachiod4ee99_in_standby_mode
           - switch.front_yard_1_2
           - switch.front_yard_2_2
-            #- switch.back_yard_1_2
-            #- switch.back_yard_2_2
+          - switch.back_yard_1_2
+          - switch.back_yard_2_2
 
       - id: 646e80a154314bd2b7d13656b84b999f  # Automatically created id
         type: entities
@@ -239,6 +245,7 @@ views:
           - sensor.bedroom_aqi
           - sensor.bedroom_dust
           - sensor.bedroom_filter_life
+          - sensor.bedroom_temperature_2
 
       - id: c6e1fa5d1ca24db5bd8893be0293a00c  # Automatically created id
         type: vertical-stack
@@ -269,7 +276,6 @@ views:
         title: Inside
         entities:
           - sensor.bedroom_temperature
-          - sensor.bedroom_temperature_2
           - sensor.theo_room_temperature
           - sensor.front_room_temperature
           - sensor.kitchen_temperature
