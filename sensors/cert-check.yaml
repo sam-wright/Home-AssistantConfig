@@ -3,3 +3,6 @@
   unit_of_measurement: days
   scan_interval: 10800
   command: "ssl-cert-check -b -c /etc/letsencrypt/live/sam-wright.duckdns.org/cert.pem | awk '{ print $NF }'"
+# - platform: cert_expiry
+#   name: SSL Cert Expiry
+#   host: https://sam-wright.duckdns.org
