@@ -1,52 +1,51 @@
 - platform: mqtt
-  name: Master Bedroom Closet Window Status 
-  state_topic: "/security/sensors345/992664/status"
-
-- platform: mqtt
-  name: Test Door1 Status 
-  state_topic: "/security/sensors345/976578/status"
-
-- platform: mqtt
-  name: Theo's Bedroom Window Status 
-  state_topic: "/security/sensors345/932332/status"
-
-- platform: mqtt
-  name: Kitchen Window Status 
-  state_topic: "/security/sensors345/992662/status"
-
-- platform: mqtt
-  name: Downstairs Bedroom Window Status 
-  state_topic: "/security/sensors345/992172/status"
-
-- platform: mqtt
-  name: Interior Garage Door Status
-  state_topic: "/security/sensors345/1018334/status"
-
-- platform: mqtt
-  name: Downstairs Bathroom Window Status 
-  state_topic: "/security/sensors345/993092/status"
-
-- platform: mqtt
-  name: North Shed Door Status 
-  state_topic: "/security/sensors345/1020528/status"
-
-- platform: mqtt
-  name: Front Door Status 
-  state_topic: "/security/sensors345/1019535/status"
-
-- platform: mqtt
-  name: Test Door2 Status 
-  state_topic: "/security/sensors345/993090/status"
+  name: Test Door6 Status 
+  state_topic: "/security/sensors345/495823/status"
 
 - platform: mqtt
   name: Back Door Status 
   state_topic: "/security/sensors345/763628/status"
 
 - platform: mqtt
-  name: Test Door6 Status 
-  state_topic: "/security/sensors345/495823/status"
+  name: Theo's Bedroom Window Status 
+  state_topic: "/security/sensors345/932332/status"
+
+- platform: mqtt
+  name: Test Door1 Status 
+  state_topic: "/security/sensors345/976578/status"
+
+- platform: mqtt
+  name: Downstairs Bedroom Window Status 
+  state_topic: "/security/sensors345/992172/status"
+
+- platform: mqtt
+  name: Kitchen Window Status 
+  state_topic: "/security/sensors345/992662/status"
+
+- platform: mqtt
+  name: Master Bedroom Closet Window Status 
+  state_topic: "/security/sensors345/992664/status"
+
+- platform: mqtt
+  name: Test Door2 Status 
+  state_topic: "/security/sensors345/993090/status"
+
+- platform: mqtt
+  name: Downstairs Bathroom Window Status 
+  state_topic: "/security/sensors345/993092/status"
+
+- platform: mqtt
+  name: Interior Garage Door Status
+  state_topic: "/security/sensors345/1018334/status"
+
+- platform: mqtt
+  name: Front Door Status 
+  state_topic: "/security/sensors345/1019535/status"
 
 - platform: mqtt
   name: Exterior Garage Door Status 
   state_topic: "/security/sensors345/1020512/status"
 
+- platform: mqtt
+  name: North Shed Door Status 
+  state_topic: "/security/sensors345/1020528/status"
