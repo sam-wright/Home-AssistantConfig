@@ -2,13 +2,13 @@
   trigger:
     platform: numeric_state
     entity_id: sensor.vision_zp3111_multisensor_4in1_temperature
-    below: 35
+    below: 30
   action:
     - service: switch.turn_on 
       entity_id: switch.shop_lights
     - service: notify.telegram
       data:
-        message: 'Workshop temp below 35, turning Shop Heat ON' 
+        message: 'Workshop temp below 30, turning Shop Heat ON' 
 
 - alias: 'Workshop Heat Off'
   trigger:
