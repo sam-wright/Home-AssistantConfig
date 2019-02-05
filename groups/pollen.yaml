@@ -5,4 +5,4 @@ Pollen:
   - sensor.allergy_index_yesterday
   - sensor.allergy_index_forecasted_average_2
   - sensor.allergy_index_historical_average_2
-  - sensor.cold__flu_forecasted_average_2
+  - sensor.cold_flu_forecasted_average_2
