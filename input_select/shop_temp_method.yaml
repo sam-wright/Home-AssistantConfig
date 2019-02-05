@@ -1,0 +1,7 @@
+shop_temp_method:
+  name: Shop Temp Method
+  options:
+    - Electric Heater
+    - Hot Water
+    - Fans
+  icon: mdi:oil-temperature
