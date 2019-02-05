@@ -8,7 +8,7 @@
   retain: false
   payload_open: "OPEN"
   payload_close: "CLOSE"
-  payload_stop: "STATE"
+  payload_stop: "OPEN"
   state_open: "open"
   state_closed: "closed"
   payload_available: "online"
