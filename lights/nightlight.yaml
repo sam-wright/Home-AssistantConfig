@@ -1,0 +1,69 @@
+- platform: mqtt
+  name: "Theo's Nightlight"
+  command_topic: "Nightlight/power"
+  state_topic: "Nightlight/powerState"
+  brightness_command_topic: "Nightlight/brightness"
+  brightness_state_topic: "Nightlight/brightnessState"
+  brightness_scale: 255
+  white_value_command_topic: "Nightlight/modifier"
+  white_value_state_topic: "Nightlight/modifierState"
+  white_value_scale: 500
+  effect_command_topic: "Nightlight/effect"
+  effect_state_topic: "Nightlight/effectState"
+  effect_list:
+    - Color_Chase
+    - Color_Glitter
+    - Single_Race
+    - Double_Crash
+    - Rainbow
+    - Blocked_Colors
+    - BPM
+    - Twinkle
+    - Fire
+    - Fill_Solid
+    - Spooky_Eyes
+    - LED_Locator
+  retain: true
+- platform: mqtt
+  name: "Color 1"
+  command_topic: "Nightlight/ColorPower"
+  state_topic: "Nightlight/powerState"
+  rgb_command_topic: "Nightlight/color1"
+  rgb_state_topic: "Nightlight/color1State"
+  retain: true
+- platform: mqtt
+  name: "Color 2"
+  command_topic: "Nightlight/ColorPower"
+  state_topic: "Nightlight/powerState"
+  rgb_command_topic: "Nightlight/color2"
+  rgb_state_topic: "Nightlight/color2State"
+  retain: true
+- platform: mqtt
+  name: "Color 3"
+  command_topic: "Nightlight/ColorPower"
+  state_topic: "Nightlight/powerState"
+  rgb_command_topic: "Nightlight/color3"
+  rgb_state_topic: "Nightlight/color3State"
+  retain: true
+- platform: mqtt
+  name: "Glitter"
+  state_topic: "Nightlight/glitter/state"
+  command_topic: "Nightlight/addEffects"
+  payload_on: "Glitter On"
+  payload_off: "Glitter Off"
+  rgb_command_topic: "Nightlight/glitterColor"
+  rgb_state_topic: "Nightlight/glitterColorState"
+  white_value_command_topic: "Nightlight/glitterChance"
+  white_value_state_topic: "Nightlight/glitterChanceState"
+  white_value_scale: 255
+  retain: true
+- platform: mqtt
+  name: "Lightning"
+  state_topic: "Nightlight/lightning/state"
+  command_topic: "Nightlight/addEffects"
+  payload_on: "Lightning On"
+  payload_off: "Lightning Off"
+  white_value_command_topic: "Nightlight/lightningChance"
+  white_value_state_topic: "Nightlight/lightningChanceState"
+  white_value_scale: 500
+  retain: true

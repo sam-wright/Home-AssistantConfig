@@ -1,0 +1,3 @@
+- platform: mqtt
+  name: "Nightlight LED Locator"
+  state_topic: "Nightlight/locator"
