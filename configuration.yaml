@@ -19,26 +19,15 @@ weather:
   - platform: darksky
     api_key: !secret darksky_key
     
-openuv:
-  api_key: !secret openuv
-
-panel_iframe:
-  router:
-    title: 'Dashboard'
-    url: 'https://sam-wright.duckdns.org/local/dashboard.html'
-    icon: mdi:view-dashboard
-
 http:
   api_password: !secret homeassistant_pass
-  cors_allowed_origins:
-    - https://sam-wright.duckdns.org
-
-
-  base_url: sam-wright.duckdns.org
+  base_url: !secret homeassistant_url 
   ssl_certificate: !secret ssl_cert 
   ssl_key: !secret ssl_key
   ip_ban_enabled: true
   login_attempts_threshold: 3 
+  trusted_networks:
+    - !secret trusted_domain
 
 # Checks for available updates
 updater:
@@ -62,6 +51,7 @@ discovery:
     - sonos
     - yamaha
     - yeelight
+    - plex_mediaserver
 
 # Allows you to issue voice commands from the frontend in enabled browsers
 conversation:
@@ -111,6 +101,7 @@ climate:
 
 # Z-Wave hub
 zwave:
+    #usb_path: /dev/ttyACM0
   usb_path: /dev/zwave
   network_key: !secret zwave_key
 
@@ -136,8 +127,8 @@ notify:
 #    api_key: !secret pushbullet_key
 
 
-ifttt:
-  key: !secret ifttt_key
+    #ifttt:
+    #  key: !secret ifttt_key
 
 dyson:
     username: !secret dyson_username 
