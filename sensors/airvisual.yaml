@@ -2,3 +2,6 @@
   api_key: !secret airvisual 
   monitored_conditions:
     - us
+  city: Salt Lake City
+  state: Utah
+  country: USA
