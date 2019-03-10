@@ -1,3 +1,4 @@
 - platform: cert_expiry
   name: SSL Cert Expiry
-  host: !secret homeassistant_url
+  #host: !secret homeassistant_url
+  host: sam-wright.duckdns.org
