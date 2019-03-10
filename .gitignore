@@ -30,3 +30,4 @@ entity_registry.yaml
 .config_entries.json
 .storage/*
 ip_bans.yaml
+.google_maps*
