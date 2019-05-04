@@ -1,0 +1,5 @@
+washing_machine_complete:
+    name: Washine Machine Complete
+    icon: mdi:account-alert
+    initial: on
+
