@@ -66,24 +66,21 @@ mqtt:
 
 # View all events in a logbook
 logbook:
-#  exclude:
-#    entities:
-#      -
+
 # Track the sun
 sun:
 
-# zoneminder:
-#   host: !secret zoneminder_address 
-
-# KODI Support
-media_player:
-  - platform: cast
-#   - platform: kodi
+alarm_control_panel:
+  - platform: manual
+    code: !secret alarm_code
+    delay_time: !secret alarm_delay_time
+    pending_time: !secret alarm_pending_time
+    trigger_time: !secret alarm_trigger_time 
 
 
 # Text to speech
 tts:
-  platform: google
+  platform: google_translate
 
 # Load Belkin Wemo devices
 wemo:
