@@ -49,7 +49,6 @@ discovery:
     - philips_hue
     - roku
     - samsung_tv
-    - sonos
     - yamaha
     - yeelight
     - plex_mediaserver
