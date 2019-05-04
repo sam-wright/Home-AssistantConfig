@@ -22,7 +22,6 @@ weather:
     api_key: !secret darksky_key
     
 http:
-  api_password: !secret homeassistant_pass
   base_url: !secret homeassistant_url 
   ssl_certificate: !secret ssl_cert 
   ssl_key: !secret ssl_key
