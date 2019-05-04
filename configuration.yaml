@@ -127,6 +127,9 @@ dyson:
     username: !secret dyson_username 
     password: !secret dyson_pass 
     language: US
+    devices:
+      - device_id: !secret dyson_bedroom_id 
+        device_ip: !secret dyson_bedroom_ip 
 
 speedtestdotnet:
   scan_interval:
