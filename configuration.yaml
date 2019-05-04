@@ -101,7 +101,6 @@ climate:
 
 # Z-Wave hub
 zwave:
-    #usb_path: /dev/ttyACM0
   usb_path: /dev/zwave
   network_key: !secret zwave_key
 
@@ -120,12 +119,6 @@ notify:
   - name: Telegram
     platform: telegram
     chat_id: !secret telegram_id
-
-#notify:
-#  - name: pushbullet
-#    platform: pushbullet
-#    api_key: !secret pushbullet_key
-
 
     #ifttt:
     #  key: !secret ifttt_key
