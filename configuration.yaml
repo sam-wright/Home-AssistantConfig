@@ -89,6 +89,12 @@ wemo:
 ecobee:
   api_key: !secret ecobee_key
 
+# tuya integration
+tuya:
+  username: !secret tuya_user
+  password: !secret tuya_pass
+  country_code: 1
+
 # Rachio component
 rachio:
     api_key: !secret rachio_api
