@@ -31,3 +31,4 @@ entity_registry.yaml
 .storage/*
 ip_bans.yaml
 .google_maps*
+www/images/*
