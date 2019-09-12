@@ -3,10 +3,14 @@ language: python
 python: "3.6.4"
 
 before_install:
-  - sudo apt install libudev-dev -y
+  - sudo apt install python3.6-dev libpython3.6-dev libudev-dev -y
   - sed -i 's/^stream:/#stream:/g' configuration.yaml
   - rm -f ./packages/stream.yaml
   - mv travis_secrets.yaml secrets.yaml
+
+addons:
+  apt:
+    update: true
 
 install:
   - pip3 install homeassistant
