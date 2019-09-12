@@ -1,8 +1,9 @@
 language: python
 python:
-  - "3.6"
+  - "3.7"
 before_install:
   - sed -i 's/^stream:/#stream:/g' configuration.yaml
+  - rm -f ./packages/stream.yaml
   - mv travis_secrets.yaml secrets.yaml
 install:
   - pip3 install homeassistant
