@@ -82,6 +82,8 @@ alarm_control_panel:
 tts:
   platform: google_translate
 
+map:
+
 # Load Belkin Wemo devices
 wemo:
 
@@ -134,6 +136,10 @@ dyson:
       - device_id: !secret dyson_bedroom_id 
         device_ip: !secret dyson_bedroom_ip 
 
+eufy:
+    username: !secret eufy_user
+    password: !secret eufy_pass
+
 speedtestdotnet:
   scan_interval:
     minutes: 33
@@ -142,6 +148,11 @@ speedtestdotnet:
     - download
     - upload
     - ping
+
+pi_hole:
+  host: !secret pihole_host 
+  location: !secret pihole_location
+  verify_ssl: true
 
 zone: !include_dir_merge_list zones
 light: !include_dir_merge_list lights
