@@ -1,0 +1,30 @@
+- platform: mqtt
+  name: "Workshop Temperature"
+  state_topic: "workshop/sensors"
+  unit_of_measurement: '°F'
+  value_template: "{{ value_json.temperature }}"
+- platform: mqtt
+  name: "Workshop Humidity"
+  state_topic: "workshop/sensors"
+  unit_of_measurement: '%'
+  value_template: "{{ value_json.humidity }}"
+- platform: mqtt
+  name: "Workshop Battery Voltage"
+  state_topic: "workshop/sensors"
+  unit_of_measurement: 'V'
+  value_template: "{{ value_json.battery_voltage }}"
+- platform: mqtt
+  name: "Workshop Battery Current"
+  state_topic: "workshop/sensors"
+  unit_of_measurement: 'A'
+  value_template: "{{ value_json.battery_current }}"
+- platform: mqtt
+  name: "Workshop Solar Current"
+  state_topic: "workshop/sensors"
+  unit_of_measurement: 'A'
+  value_template: "{{ value_json.solar_current }}"
+- platform: mqtt
+  name: "Workshop Solar Voltage"
+  state_topic: "workshop/sensors"
+  unit_of_measurement: 'V'
+  value_template: "{{ value_json.solar_voltage }}"
