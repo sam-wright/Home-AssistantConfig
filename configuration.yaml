@@ -17,6 +17,8 @@ config:
 
 system_health:
 
+mobile_app:
+
 weather:
   - platform: darksky
     api_key: !secret darksky_key
@@ -27,8 +29,6 @@ http:
   ssl_key: !secret ssl_key
   ip_ban_enabled: true
   login_attempts_threshold: 3 
-  trusted_networks:
-    - !secret trusted_domain
 
 # Checks for available updates
 updater:
